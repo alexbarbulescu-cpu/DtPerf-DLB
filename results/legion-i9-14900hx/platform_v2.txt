@@ -1,0 +1,2 @@
+Intel(R) Core(TM) i9-14900HX
+Power Scheme GUID: 8b6f86ea-bccd-4556-bcb1-b35945473f48  (High performance)

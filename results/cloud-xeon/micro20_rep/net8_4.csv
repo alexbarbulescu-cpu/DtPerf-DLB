@@ -1,0 +1,6 @@
+Runtime,Category,Method,P,OpsPerIter,Iterations,MedianNs,MeanNs,SdNs,Ci95Ns,MinNs,AllocBytesPerOp
+.NET 8.0 JIT,Materialize,Reflection,20,19627,30,1376.3336,1371.1879,29.0413,10.843,1311.4795,144
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,37101,30,442.9395,492.2886,94.6001,35.3203,427.0323,144
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,93430,30,285.285,284.7766,3.3653,1.2565,278.2582,144
+.NET 8.0 JIT,Materialize,CompiledWhole,20,100702,30,267.8604,280.1684,27.6816,10.3353,257.878,144
+.NET 8.0 JIT,Materialize,Generated,20,252839,30,104.4787,106.0958,5.4857,2.0482,102.2754,144

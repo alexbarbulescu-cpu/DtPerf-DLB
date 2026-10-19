@@ -44,14 +44,7 @@ $strategies = @("Reflection","ReflectionInvoker","CompiledPerProperty","Compiled
 foreach ($rep in 1..10) { foreach ($r in $rt.Keys) { foreach ($p in 5,20,50) { foreach ($s in $strategies) {
   Invoke-Rt $r @("cold",$p,$s) | Out-File -Append -Encoding ascii $cold } } } }
 
-Write-Host "== Closed-loop digital twin simulation"
-$sim = Join-Path $out "sim.csv"
-"Runtime,Strategy,Assets,BudgetMs,Seed,Ticks,CostPer1kAssetTicks,FailuresPer1k,PmPer1k,IngestMs,IngestShare,DroppedShare,Candidates,UnsampledCandShare,SamplesPerCand,OverrunShare" | Out-File -Encoding ascii $sim
-foreach ($seed in 1..$Seeds) { foreach ($r in $rt.Keys) { foreach ($a in $Fleets) { foreach ($s in $strategies) {
-  Write-Host "  seed=$seed rt=$r A=$a $s"
-  Invoke-Rt $r @("sim",$s,$a,$BudgetMs,200,$seed) | Out-File -Append -Encoding ascii $sim } } } }
-foreach ($seed in 1..$Seeds) { Invoke-Rt "net10" @("sim","Generated",2500,1000,200,$seed) | Out-File -Append -Encoding ascii $sim }
-
+Write-Host "== Closed-loop experiment: run RUN-SIM-V2.cmd (run-sim-v2.ps1) after this script"
 "done $(Get-Date -Format o)" | Out-File (Join-Path $out "DONE.txt")
 Stop-Transcript | Out-Null
 Compress-Archive -Force -Path $out -DestinationPath "$out.zip"

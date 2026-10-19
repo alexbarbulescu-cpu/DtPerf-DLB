@@ -82,9 +82,10 @@ public sealed class DtSim
         for (int j = 0; j < k; j++)
         {
             double x = L + 0.008 * N(), slope = Math.Max(1e-5, b + 0.0015 * N());
+            bool shocked = false; // as in the physical process: at most one regime shift (drift doubling) before reset
             for (int h = 0; h < H; h++)
             {
-                if (U() < ShockP) slope *= ShockMul;
+                if (U() < ShockP && !shocked) { slope *= ShockMul; shocked = true; }
                 x += slope + SigmaW * N();
                 if (x >= 1.0) { hits++; break; }
             }
@@ -98,28 +99,39 @@ public sealed class DtSim
         int capacity = Math.Max(1, A / 100);
         double theta = double.TryParse(Environment.GetEnvironmentVariable("DT_THETA"), System.Globalization.NumberStyles.Float, CultureInfo.InvariantCulture, out var th) ? th : _c.Theta;
         long budgetTicks = (long)(_c.BudgetMs * Stopwatch.Frequency / 1000.0);
+        // optional cap on samples per candidate (analysis-depth ablation): DT_KMAX
+        int maxS = int.TryParse(Environment.GetEnvironmentVariable("DT_KMAX"), out var km) && km > 0 ? km : _c.MaxSamples;
+        int batch = Math.Min(_c.BatchSamples, maxS);
+        // the whole cycle (sync + screening + what-if + decision) is budgeted: time for screening and decision is reserved
+        // from an exponentially smoothed estimate of the previous cycles (x1.25 safety factor)
+        double scrEst = 0, decEst = 0; var cycleMs = new List<double>(_c.Ticks);
+        double sumScrMs = 0, sumDecMs = 0;
         var samples = new int[A]; var hitsArr = new int[A]; var ttf = new double[A];
         var cand = new List<int>(A); var scheduled = new long[A]; // 0 = none, else execution tick (lead time = Horizon)
         double cost = 0; int failures = 0, pms = 0, measured = 0;
         double sumIngestMs = 0, sumSamplesPerCand = 0, sumCand = 0, sumDropped = 0, sumUnscreenedCand = 0;
-        int overrunTicks = 0;
+        int overrunTicks = 0, overrun5 = 0, overrunGc = 0, cyclesGc = 0;
         var sw = new Stopwatch();
         for (long tick = 1; tick <= _c.Ticks; tick++)
         {
             EmitTelemetry(tick);
             _s = (ulong)(_c.Seed * 1_000_003L + tick) | 1UL; // identical MC stream for every strategy
+            int gc0 = GC.CollectionCount(0);
             sw.Restart();
+            long syncDeadline = budgetTicks - (long)(1.25 * (scrEst + decEst));
+            long mcDeadline = budgetTicks - (long)(1.25 * decEst);
             // ---- ingest + materialize + update (budgeted) ----
             int processed = 0;
             // round-robin cursor: under overload the backlog is spread over the fleet (bounded staleness), not starved
             for (int k = 0; k < A; k++)
             {
-                if ((k & 63) == 0 && sw.ElapsedTicks >= budgetTicks) break;
+                if ((k & 63) == 0 && sw.ElapsedTicks >= syncDeadline) break;
                 UpdateTwin(_m.Map(_payloads[(_cursor + k) % A])); processed++;
             }
             _cursor = (_cursor + processed) % A;
             double ingestMs = sw.Elapsed.TotalMilliseconds;
             // ---- screening (deterministic time-to-threshold from current twin state) ----
+            long tScr0 = sw.ElapsedTicks;
             cand.Clear();
             for (int i = 0; i < A; i++)
             {
@@ -129,22 +141,23 @@ public sealed class DtSim
                 if (scheduled[i] == 0 && ttf[i] < 3.0 * H) cand.Add(i);
             }
             cand.Sort((x, y) => ttf[x].CompareTo(ttf[y]));
+            long tScr = sw.ElapsedTicks - tScr0;
             // ---- anytime what-if Monte Carlo within remaining budget ----
             bool progress = true;
-            while (progress && sw.ElapsedTicks < budgetTicks)
+            while (progress && sw.ElapsedTicks < mcDeadline)
             {
                 progress = false;
                 for (int c = 0; c < cand.Count; c++)
                 {
-                    if (sw.ElapsedTicks >= budgetTicks) break;
+                    if (sw.ElapsedTicks >= mcDeadline) break;
                     int i = cand[c];
-                    if (samples[i] >= _c.MaxSamples) continue;
+                    if (samples[i] >= maxS) continue;
                     long age = tick - Math.Max(0, _last[i]);
-                    hitsArr[i] += SimulateHits(_L[i] + age * _b[i], _b[i], H, _c.BatchSamples);
-                    samples[i] += _c.BatchSamples; progress = true;
+                    hitsArr[i] += SimulateHits(_L[i] + age * _b[i], _b[i], H, batch);
+                    samples[i] += batch; progress = true;
                 }
             }
-            if (sw.ElapsedTicks > budgetTicks * 1.05) overrunTicks++;
+            long tDec0 = sw.ElapsedTicks;
             // ---- decision: risk-ranked, capacity-limited preventive maintenance ----
             // work orders execute after a lead time of H cycles; p_hat = P(failure before the order executes).
             // assets with MC evidence use p_hat >= theta; assets without evidence fall back to the point forecast TTF <= H
@@ -153,6 +166,18 @@ public sealed class DtSim
                 .Where(x => x.risk >= theta).OrderByDescending(x => x.risk).Take(capacity).Select(x => x.i).ToList();
             bool count = tick > _c.Burnin;
             foreach (var i in chosen) scheduled[i] = tick + H;
+            // decisions are issued here: the cycle latency is measured up to this point
+            long tEnd = sw.ElapsedTicks, tDec = tEnd - tDec0;
+            scrEst = tick == 1 ? tScr : 0.7 * scrEst + 0.3 * tScr;
+            decEst = tick == 1 ? tDec : 0.7 * decEst + 0.3 * tDec;
+            if (count)
+            {
+                double ms = tEnd * 1000.0 / Stopwatch.Frequency; cycleMs.Add(ms);
+                if (tEnd > budgetTicks) overrunTicks++;
+                if (tEnd > budgetTicks * 1.05) { overrun5++; if (GC.CollectionCount(0) > gc0) overrunGc++; }
+                if (GC.CollectionCount(0) > gc0) cyclesGc++;
+                sumScrMs += tScr * 1000.0 / Stopwatch.Frequency; sumDecMs += tDec * 1000.0 / Stopwatch.Frequency;
+            }
             // ---- physical world evolves one step ----
             for (int i = 0; i < A; i++)
             {
@@ -171,14 +196,19 @@ public sealed class DtSim
             }
         }
         double assetTicks = (double)A * measured;
+        if (Environment.GetEnvironmentVariable("DT_GCLOG") == "1")
+            Console.Error.WriteLine($"GCLOG overrun5={overrun5} overrun5_with_gc={overrunGc} cycles_with_gc={cyclesGc} measured={measured}");
+        cycleMs.Sort();
+        double Q(double q) => cycleMs.Count == 0 ? double.NaN : cycleMs[Math.Min(cycleMs.Count - 1, (int)Math.Ceiling(q * cycleMs.Count) - 1)];
         string F(double x) => x.ToString("0.#####", CultureInfo.InvariantCulture);
         return string.Join(",", Env.Runtime, _c.Strategy, A, F(_c.BudgetMs), _c.Seed, measured,
             F(1000 * cost / assetTicks), F(1000.0 * failures / assetTicks), F(1000.0 * pms / assetTicks),
             F(sumIngestMs / measured), F(sumIngestMs / measured / _c.BudgetMs), F(sumDropped / measured / A),
-            F(sumCand / measured), F(sumUnscreenedCand / Math.Max(1, sumCand)), F(sumSamplesPerCand / measured), F((double)overrunTicks / measured));
+            F(sumCand / measured), F(sumUnscreenedCand / Math.Max(1, sumCand)), F(sumSamplesPerCand / measured), F((double)overrunTicks / measured), F((double)overrun5 / measured),
+            F(Q(0.95)), F(Q(0.99)), F(Q(1.0)), F(sumScrMs / measured), F(sumDecMs / measured));
     }
 
-    public static string Header => "Runtime,Strategy,Assets,BudgetMs,Seed,Ticks,CostPer1kAssetTicks,FailuresPer1k,PmPer1k,IngestMs,IngestShare,DroppedShare,Candidates,UnsampledCandShare,SamplesPerCand,OverrunShare";
+    public static string Header => "Runtime,Strategy,Assets,BudgetMs,Seed,Ticks,CostPer1kAssetTicks,FailuresPer1k,PmPer1k,IngestMs,IngestShare,DroppedShare,Candidates,UnsampledCandShare,SamplesPerCand,OverrunShare,Overrun5Share,CycleP95Ms,CycleP99Ms,CycleMaxMs,ScreenMs,DecisionMs";
 
     void ResetAsset(int i)
     {

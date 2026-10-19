@@ -1,0 +1,6 @@
+Runtime,Category,Method,P,OpsPerIter,Iterations,MedianNs,MeanNs,SdNs,Ci95Ns,MinNs,AllocBytesPerOp
+.NET 10.0 NativeAOT,Materialize,Reflection,20,22544,30,1205.3278,1345.3955,303.0197,113.1367,1146.9876,784
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,32921,30,780.3863,797.4362,54.5467,20.3658,771.3956,144
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,6460,30,3988.2201,3999.5351,39.9685,14.9228,3949.3269,5056
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,5466,30,4558.463,4811.5009,614.5327,229.4445,4494.4351,2728
+.NET 10.0 NativeAOT,Materialize,Generated,20,112684,30,226.0104,231.9345,16.8935,6.3074,214.4448,144

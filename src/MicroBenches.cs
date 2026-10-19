@@ -23,6 +23,8 @@ public static class MicroBenches
         return res;
     }
 
+    public static List<BenchResult> Materialization20() => Materialization<Telemetry20>(20).ToList();
+
     // ---------------- RQ1: instantiation ----------------
     static IEnumerable<BenchResult> Instantiation()
     {
