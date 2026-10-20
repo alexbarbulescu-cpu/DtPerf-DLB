@@ -2,9 +2,9 @@
 
 Code, raw results and analysis scripts for the manuscript
 **"Decision-Latency Budgets in Digital Twins: How Object-Materialization Strategies Bound Fleet Capacity and Decision Quality"**
-(A. Bărbulescu, T. F. Furtună — Bucharest University of Economic Studies; submitted to *Systems*, MDPI).
+(A. Bărbulescu, T. F. Furtună — Bucharest University of Economic Studies; submitted to the *Journal of Systems and Software*, Elsevier).
 
-The version cited in the manuscript is commit **`0c88459`** (https://github.com/alexbarbulescu-cpu/DtPerf-DLB/tree/0c88459101172e4792d1bd61a96a5525e40fe6cd).
+The version cited in the manuscript is the commit that introduced this README text (see the Data availability section of the article). All code and data are identical to commit `0c88459`.
 
 ## Contents
 | Path | What it is |
