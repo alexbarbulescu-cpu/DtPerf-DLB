@@ -17,7 +17,10 @@ public static class MaterializerNames
     public const string CompiledPerProperty = "CompiledPerProperty";
     public const string CompiledWhole = "CompiledWhole";
     public const string Generated = "Generated";
+    public const string GeneratedLookup = "GeneratedLookup";   // S5b control: generated code with S4's lookup algorithm
+    public const string Null = "Null";                         // closed loop only: no materialization (measures c_u)
     public static readonly string[] All = { Reflection, Invoker, CompiledPerProperty, CompiledWhole, Generated };
+    public static readonly string[] Control = { CompiledWhole, Generated, GeneratedLookup };
 }
 
 /// <summary>S1: late-bound baseline with cached PropertyInfo (best-practice reflection, no per-call lookup by name).</summary>
@@ -130,6 +133,38 @@ public sealed class GeneratedMaterializer<T> : IMaterializer<T> where T : class,
     public T Map(Dictionary<string, object?> payload) => _map(payload);
 }
 
+/// <summary>S5b (control): statically generated mapper that uses the same per-property TryGetValue lookups as S4,
+/// so that S4 vs S5b isolates run-time code generation from the lookup algorithm.</summary>
+public sealed class GeneratedLookupMaterializer<T> : IMaterializer<T> where T : class, new()
+{
+    private readonly Func<Dictionary<string, object?>, T> _map;
+    public string Name => MaterializerNames.GeneratedLookup;
+    public GeneratedLookupMaterializer()
+    {
+        _map = typeof(T) switch
+        {
+            var x when x == typeof(Telemetry5) => (Func<Dictionary<string, object?>, T>)(object)(Func<Dictionary<string, object?>, Telemetry5>)GeneratedMappers.MapLookup5,
+            var x when x == typeof(Telemetry20) => (Func<Dictionary<string, object?>, T>)(object)(Func<Dictionary<string, object?>, Telemetry20>)GeneratedMappers.MapLookup20,
+            var x when x == typeof(Telemetry50) => (Func<Dictionary<string, object?>, T>)(object)(Func<Dictionary<string, object?>, Telemetry50>)GeneratedMappers.MapLookup50,
+            _ => throw new NotSupportedException(typeof(T).Name)
+        };
+    }
+    public T Map(Dictionary<string, object?> payload) => _map(payload);
+}
+
+/// <summary>Null materializer (closed loop only): reads only the three fields the twin update needs into a reused
+/// instance, so that the in-loop cost per asset approximates the state-update cost c_u plus loop overhead.</summary>
+public sealed class NullMaterializer : IMaterializer<Telemetry20>
+{
+    private readonly Telemetry20 _t = new();
+    public string Name => MaterializerNames.Null;
+    public Telemetry20 Map(Dictionary<string, object?> d)
+    {
+        _t.AssetId = (int)d["AssetId"]!; _t.Tick = (long)d["Tick"]!; _t.Vibration = (double)d["Vibration"]!;
+        return _t;
+    }
+}
+
 public static class MaterializerFactory
 {
     public static IMaterializer<T> Create<T>(string name) where T : class, new() => name switch
@@ -139,6 +174,8 @@ public static class MaterializerFactory
         MaterializerNames.CompiledPerProperty => new CompiledPerPropertyMaterializer<T>(),
         MaterializerNames.CompiledWhole => new CompiledWholeMaterializer<T>(),
         MaterializerNames.Generated => new GeneratedMaterializer<T>(),
+        MaterializerNames.GeneratedLookup => new GeneratedLookupMaterializer<T>(),
+        MaterializerNames.Null when typeof(T) == typeof(Telemetry20) => (IMaterializer<T>)(object)new NullMaterializer(),
         _ when name.StartsWith("Synthetic") => new SyntheticMaterializer<T>(int.Parse(name.Substring("Synthetic".Length))),
         _ => throw new ArgumentException(name)
     };

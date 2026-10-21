@@ -1,0 +1,870 @@
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,0,8.7564
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,1,8.0586
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,2,8.0818
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,3,7.9592
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,4,8.0263
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,5,7.9502
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,6,7.9103
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,7,7.8945
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,8,8.0313
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,9,7.8786
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,10,7.8798
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,11,7.932
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,12,7.9195
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,13,7.9063
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,14,7.839
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,15,7.7798
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,16,7.831
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,17,7.8556
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,18,8.0167
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,19,7.8885
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,20,7.9162
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,21,7.9441
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,22,7.7703
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,23,7.7341
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,24,7.6453
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,25,7.8481
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,26,7.8206
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,27,7.6754
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,28,7.6414
+.NET 10.0 NativeAOT,Instantiate,Direct (new T()),5,29,7.7498
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,0,6.4735
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,1,6.6935
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,2,6.9702
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,3,6.3453
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,4,7.0555
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,5,6.3841
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,6,6.7722
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,7,8.2413
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,8,7.0306
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,9,8.369
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,10,7.9417
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,11,8.9531
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,12,8.8196
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,13,8.2677
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,14,8.3775
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,15,7.2328
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,16,6.5543
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,17,7.7332
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,18,8.0056
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,19,8.0426
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,20,7.9599
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,21,7.7613
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,22,6.5394
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,23,6.1054
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,24,5.9407
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,25,6.0295
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,26,6.2247
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,27,6.1665
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,28,6.3062
+.NET 10.0 NativeAOT,Instantiate,UnsafeAccessor,5,29,6.3853
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,0,9.6155
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,1,9.5321
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,2,11.2414
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,3,10.9254
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,4,9.5696
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,5,10.342
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,6,10.6174
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,7,9.9929
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,8,9.8883
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,9,9.6285
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,10,10.1995
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,11,9.5868
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,12,9.5343
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,13,9.5794
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,14,9.5936
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,15,9.6702
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,16,9.9298
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,17,9.5213
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,18,10.5017
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,19,9.418
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,20,9.4177
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,21,11.0362
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,22,9.5173
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,23,9.379
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,24,9.5313
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,25,9.5807
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,26,9.4272
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,27,9.4483
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,28,9.5941
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance<T>,5,29,9.4838
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,0,61.2737
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,1,79.6209
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,2,81.3169
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,3,59.7563
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,4,59.3305
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,5,58.2732
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,6,61.4443
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,7,58.5587
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,8,59.1655
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,9,58.7262
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,10,58.8601
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,11,58.4076
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,12,59.3093
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,13,59.6836
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,14,58.527
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,15,58.2885
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,16,56.5219
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,17,59.8962
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,18,59.1813
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,19,59.5722
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,20,59.619
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,21,57.6736
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,22,58.3233
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,23,57.5889
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,24,57.7131
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,25,58.4502
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,26,58.4098
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,27,58.8609
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,28,58.1754
+.NET 10.0 NativeAOT,Instantiate,Activator.CreateInstance(Type),5,29,57.6899
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,0,17.4509
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,1,23.4276
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,2,21.8636
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,3,20.2218
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,4,15.0279
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,5,14.8601
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,6,14.8398
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,7,14.6962
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,8,14.793
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,9,14.6677
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,10,14.7107
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,11,18.2129
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,12,15.8608
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,13,26.67
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,14,15.4888
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,15,16.2197
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,16,15.252
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,17,15.5591
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,18,15.454
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,19,15.113
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,20,15.5857
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,21,15.2531
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,22,18.54
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,23,15.7985
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,24,15.6387
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,25,16.2074
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,26,16.0193
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,27,19.1155
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,28,15.5377
+.NET 10.0 NativeAOT,Instantiate,ConstructorInfo.Invoke,5,29,16.1007
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,0,18.3659
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,1,18.4164
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,2,18.3303
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,3,18.2526
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,4,18.3995
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,5,18.2531
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,6,18.3509
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,7,18.4765
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,8,18.2975
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,9,18.3355
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,10,18.3187
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,11,18.4514
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,12,18.4309
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,13,18.4205
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,14,20.0687
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,15,19.052
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,16,18.9758
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,17,18.8444
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,18,18.9091
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,19,18.5426
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,20,19.277
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,21,18.8519
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,22,18.7514
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,23,19.1339
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,24,18.4256
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,25,18.8188
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,26,18.7698
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,27,18.6124
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,28,18.451
+.NET 10.0 NativeAOT,Instantiate,ConstructorInvoker,5,29,18.6495
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,0,72.1338
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,1,68.6638
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,2,68.8074
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,3,68.6514
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,4,68.1364
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,5,69.0481
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,6,69.997
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,7,81.2801
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,8,70.5462
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,9,68.2462
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,10,69.8121
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,11,76.1565
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,12,82.4066
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,13,68.3076
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,14,67.7861
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,15,67.9572
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,16,67.699
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,17,67.8876
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,18,67.015
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,19,66.8698
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,20,66.8137
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,21,67.5037
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,22,66.8038
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,23,67.7406
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,24,66.7553
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,25,67.0046
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,26,66.7841
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,27,67.5116
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,28,67.3196
+.NET 10.0 NativeAOT,Instantiate,Compiled expression,5,29,68.028
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,0,0.3571
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,1,0.3584
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,2,0.3537
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,3,0.3561
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,4,0.3737
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,5,0.3574
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,6,0.3544
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,7,0.3564
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,8,0.356
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,9,0.3522
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,10,0.3577
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,11,0.3546
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,12,0.3551
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,13,0.3549
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,14,0.3558
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,15,0.3542
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,16,0.3561
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,17,0.3589
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,18,0.3542
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,19,0.3548
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,20,0.3554
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,21,0.3549
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,22,0.357
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,23,0.3644
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,24,0.3683
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,25,0.3532
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,26,0.3564
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,27,0.3524
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,28,0.3535
+.NET 10.0 NativeAOT,SetProperty,Direct (t.P = v),5,29,0.3535
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,0,0.4443
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,1,0.4385
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,2,0.4408
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,3,0.3721
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,4,0.3547
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,5,0.3529
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,6,0.352
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,7,0.354
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,8,0.352
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,9,0.3522
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,10,0.3518
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,11,0.3559
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,12,0.3579
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,13,0.355
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,14,0.358
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,15,0.36
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,16,0.354
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,17,0.355
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,18,0.3576
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,19,0.4147
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,20,0.3847
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,21,0.3886
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,22,0.46
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,23,0.3834
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,24,0.5218
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,25,0.4355
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,26,0.3547
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,27,0.3725
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,28,0.366
+.NET 10.0 NativeAOT,SetProperty,UnsafeAccessor,5,29,0.3588
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,0,32.1295
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,1,31.5799
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,2,30.5916
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,3,31.1568
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,4,31.8086
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,5,32.7195
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,6,34.0158
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,7,31.4703
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,8,31.3285
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,9,31.3907
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,10,31.0195
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,11,31.108
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,12,31.1021
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,13,31.4002
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,14,31.6881
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,15,31.0787
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,16,31.5775
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,17,31.5228
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,18,31.1908
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,19,30.9283
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,20,33.371
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,21,32.1931
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,22,31.6099
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,23,30.9362
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,24,32.296
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,25,31.268
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,26,32.5921
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,27,30.8633
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,28,31.9291
+.NET 10.0 NativeAOT,SetProperty,PropertyInfo.SetValue,5,29,31.0685
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,0,17.8374
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,1,17.8158
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,2,17.4357
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,3,18.3369
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,4,17.6703
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,5,17.3935
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,6,18.1402
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,7,17.3122
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,8,17.5906
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,9,18.1334
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,10,17.1278
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,11,17.5681
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,12,17.6356
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,13,17.7948
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,14,17.3117
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,15,18.4802
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,16,17.4426
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,17,17.6694
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,18,17.592
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,19,19.7475
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,20,17.1123
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,21,17.6123
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,22,18.3465
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,23,17.8514
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,24,20.2436
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,25,20.2681
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,26,17.2821
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,27,17.43
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,28,19.7305
+.NET 10.0 NativeAOT,SetProperty,MethodInvoker,5,29,18.2568
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,0,4.4762
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,1,4.6443
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,2,4.5232
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,3,4.4986
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,4,4.5355
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,5,4.5333
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,6,4.4972
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,7,4.4795
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,8,4.5324
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,9,4.618
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,10,4.4864
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,11,4.5192
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,12,4.6224
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,13,4.4975
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,14,4.558
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,15,4.4691
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,16,4.4335
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,17,4.5582
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,18,4.4801
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,19,4.5379
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,20,4.5051
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,21,4.8607
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,22,4.9749
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,23,4.9498
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,24,4.9406
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,25,4.8739
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,26,4.7898
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,27,4.8805
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,28,4.9038
+.NET 10.0 NativeAOT,SetProperty,CreateDelegate (typed),5,29,4.928
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,0,183.7224
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,1,166.2755
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,2,184.3058
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,3,218.3164
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,4,218.6007
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,5,217.8354
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,6,218.3459
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,7,216.8965
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,8,215.2111
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,9,217.3785
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,10,204.7052
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,11,159.8138
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,12,160.9683
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,13,168.1018
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,14,159.5253
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,15,158.6294
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,16,159.3478
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,17,171.611
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,18,158.6397
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,19,164.1661
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,20,159.961
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,21,157.5035
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,22,172.4276
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,23,174.1155
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,24,191.5253
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,25,183.4978
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,26,187.1767
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,27,182.0488
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,28,167.6047
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (typed),5,29,159.216
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,0,227.3952
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,1,180.3691
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,2,169.3439
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,3,166.0584
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,4,174.5362
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,5,191.6067
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,6,173.0104
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,7,171.6005
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,8,171.2405
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,9,179.8379
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,10,167.9378
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,11,184.0063
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,12,234.6583
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,13,168.0227
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,14,164.9545
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,15,164.8605
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,16,163.4514
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,17,167.3935
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,18,169.0397
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,19,190.8048
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,20,168.7366
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,21,164.9176
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,22,168.2509
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,23,163.3135
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,24,204.7947
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,25,180.7281
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,26,163.6927
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,27,165.6627
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,28,163.829
+.NET 10.0 NativeAOT,SetProperty,Compiled expression (object),5,29,168.9581
+.NET 10.0 NativeAOT,Materialize,Reflection,5,0,592.2369
+.NET 10.0 NativeAOT,Materialize,Reflection,5,1,611.306
+.NET 10.0 NativeAOT,Materialize,Reflection,5,2,510.0373
+.NET 10.0 NativeAOT,Materialize,Reflection,5,3,384.2731
+.NET 10.0 NativeAOT,Materialize,Reflection,5,4,339.6835
+.NET 10.0 NativeAOT,Materialize,Reflection,5,5,341.6559
+.NET 10.0 NativeAOT,Materialize,Reflection,5,6,337.5092
+.NET 10.0 NativeAOT,Materialize,Reflection,5,7,353.9068
+.NET 10.0 NativeAOT,Materialize,Reflection,5,8,341.5359
+.NET 10.0 NativeAOT,Materialize,Reflection,5,9,342.5284
+.NET 10.0 NativeAOT,Materialize,Reflection,5,10,408.8068
+.NET 10.0 NativeAOT,Materialize,Reflection,5,11,373.7196
+.NET 10.0 NativeAOT,Materialize,Reflection,5,12,471.4471
+.NET 10.0 NativeAOT,Materialize,Reflection,5,13,575.5978
+.NET 10.0 NativeAOT,Materialize,Reflection,5,14,580.1077
+.NET 10.0 NativeAOT,Materialize,Reflection,5,15,457.9969
+.NET 10.0 NativeAOT,Materialize,Reflection,5,16,625.5496
+.NET 10.0 NativeAOT,Materialize,Reflection,5,17,516.4988
+.NET 10.0 NativeAOT,Materialize,Reflection,5,18,539.852
+.NET 10.0 NativeAOT,Materialize,Reflection,5,19,437.8869
+.NET 10.0 NativeAOT,Materialize,Reflection,5,20,527.716
+.NET 10.0 NativeAOT,Materialize,Reflection,5,21,447.9479
+.NET 10.0 NativeAOT,Materialize,Reflection,5,22,366.0889
+.NET 10.0 NativeAOT,Materialize,Reflection,5,23,350.9402
+.NET 10.0 NativeAOT,Materialize,Reflection,5,24,372.7511
+.NET 10.0 NativeAOT,Materialize,Reflection,5,25,342.1095
+.NET 10.0 NativeAOT,Materialize,Reflection,5,26,343.1321
+.NET 10.0 NativeAOT,Materialize,Reflection,5,27,347.3762
+.NET 10.0 NativeAOT,Materialize,Reflection,5,28,427.6634
+.NET 10.0 NativeAOT,Materialize,Reflection,5,29,342.1474
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,0,209.8446
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,1,205.7891
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,2,210.6864
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,3,209.1839
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,4,213.5189
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,5,210.1195
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,6,211.1504
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,7,213.4191
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,8,210.0354
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,9,208.0289
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,10,211.2661
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,11,207.4774
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,12,209.6486
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,13,210.1094
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,14,209.9975
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,15,208.2696
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,16,254.5562
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,17,318.1124
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,18,299.8668
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,19,277.7537
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,20,213.4152
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,21,222.5177
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,22,210.5102
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,23,214.7727
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,24,211.1841
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,25,213.6735
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,26,210.1871
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,27,217.9529
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,28,211.917
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,5,29,212.0539
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,0,1193.2526
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,1,1071.0485
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,2,1052.4507
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,3,1057.3934
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,4,1065.8024
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,5,1039.9609
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,6,1041.8645
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,7,1048.4719
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,8,1057.9434
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,9,1050.9689
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,10,1077.3479
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,11,1054.3791
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,12,1038.1649
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,13,1046.9907
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,14,1059.1611
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,15,1043.0551
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,16,1052.2797
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,17,1053.58
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,18,1043.2757
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,19,1174.8851
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,20,1175.578
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,21,1063.8389
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,22,1290.4448
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,23,1144.7004
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,24,1433.6808
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,25,1071.24
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,26,1077.3395
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,27,1091.5569
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,28,1088.7089
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,5,29,1052.7438
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,0,1168.2919
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,1,1153.6944
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,2,1177.6705
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,3,1140.7927
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,4,1162.1905
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,5,1132.1958
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,6,1152.5709
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,7,1158.2192
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,8,1209.237
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,9,1202.6246
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,10,1222.2848
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,11,1181.8174
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,12,1231.2044
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,13,1320.3353
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,14,1187.7458
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,15,1242.7188
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,16,1195.3303
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,17,1138.7976
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,18,1133.6227
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,19,1166.4443
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,20,1135.4959
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,21,1301.6684
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,22,1197.2433
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,23,1188.7082
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,24,1171.5557
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,25,1311.2418
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,26,1175.4738
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,27,1165.8425
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,28,1227.8174
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,5,29,1261.1828
+.NET 10.0 NativeAOT,Materialize,Generated,5,0,70.0366
+.NET 10.0 NativeAOT,Materialize,Generated,5,1,73.9832
+.NET 10.0 NativeAOT,Materialize,Generated,5,2,64.2744
+.NET 10.0 NativeAOT,Materialize,Generated,5,3,64.3525
+.NET 10.0 NativeAOT,Materialize,Generated,5,4,70.5622
+.NET 10.0 NativeAOT,Materialize,Generated,5,5,66.9316
+.NET 10.0 NativeAOT,Materialize,Generated,5,6,71.0621
+.NET 10.0 NativeAOT,Materialize,Generated,5,7,84.8285
+.NET 10.0 NativeAOT,Materialize,Generated,5,8,69.8872
+.NET 10.0 NativeAOT,Materialize,Generated,5,9,65.1309
+.NET 10.0 NativeAOT,Materialize,Generated,5,10,64.5046
+.NET 10.0 NativeAOT,Materialize,Generated,5,11,63.0188
+.NET 10.0 NativeAOT,Materialize,Generated,5,12,64.7961
+.NET 10.0 NativeAOT,Materialize,Generated,5,13,65.731
+.NET 10.0 NativeAOT,Materialize,Generated,5,14,64.7304
+.NET 10.0 NativeAOT,Materialize,Generated,5,15,65.4753
+.NET 10.0 NativeAOT,Materialize,Generated,5,16,64.7259
+.NET 10.0 NativeAOT,Materialize,Generated,5,17,65.472
+.NET 10.0 NativeAOT,Materialize,Generated,5,18,66.8995
+.NET 10.0 NativeAOT,Materialize,Generated,5,19,66.9768
+.NET 10.0 NativeAOT,Materialize,Generated,5,20,66.2356
+.NET 10.0 NativeAOT,Materialize,Generated,5,21,66.6189
+.NET 10.0 NativeAOT,Materialize,Generated,5,22,69.107
+.NET 10.0 NativeAOT,Materialize,Generated,5,23,67.5211
+.NET 10.0 NativeAOT,Materialize,Generated,5,24,67.9555
+.NET 10.0 NativeAOT,Materialize,Generated,5,25,66.4549
+.NET 10.0 NativeAOT,Materialize,Generated,5,26,67.6762
+.NET 10.0 NativeAOT,Materialize,Generated,5,27,66.2707
+.NET 10.0 NativeAOT,Materialize,Generated,5,28,66.8143
+.NET 10.0 NativeAOT,Materialize,Generated,5,29,65.9801
+.NET 10.0 NativeAOT,Materialize,Reflection,20,0,1132.3728
+.NET 10.0 NativeAOT,Materialize,Reflection,20,1,1142.8473
+.NET 10.0 NativeAOT,Materialize,Reflection,20,2,1154.7179
+.NET 10.0 NativeAOT,Materialize,Reflection,20,3,1121.8444
+.NET 10.0 NativeAOT,Materialize,Reflection,20,4,1141.2117
+.NET 10.0 NativeAOT,Materialize,Reflection,20,5,1149.7998
+.NET 10.0 NativeAOT,Materialize,Reflection,20,6,1136.6647
+.NET 10.0 NativeAOT,Materialize,Reflection,20,7,1115.7999
+.NET 10.0 NativeAOT,Materialize,Reflection,20,8,1117.9086
+.NET 10.0 NativeAOT,Materialize,Reflection,20,9,1122.5183
+.NET 10.0 NativeAOT,Materialize,Reflection,20,10,1137.9058
+.NET 10.0 NativeAOT,Materialize,Reflection,20,11,1125.4823
+.NET 10.0 NativeAOT,Materialize,Reflection,20,12,1124.5092
+.NET 10.0 NativeAOT,Materialize,Reflection,20,13,1136.3491
+.NET 10.0 NativeAOT,Materialize,Reflection,20,14,1700.2724
+.NET 10.0 NativeAOT,Materialize,Reflection,20,15,1836.7273
+.NET 10.0 NativeAOT,Materialize,Reflection,20,16,1196.8169
+.NET 10.0 NativeAOT,Materialize,Reflection,20,17,1124.8052
+.NET 10.0 NativeAOT,Materialize,Reflection,20,18,1130.3925
+.NET 10.0 NativeAOT,Materialize,Reflection,20,19,1136.4215
+.NET 10.0 NativeAOT,Materialize,Reflection,20,20,1163.2593
+.NET 10.0 NativeAOT,Materialize,Reflection,20,21,1236.7298
+.NET 10.0 NativeAOT,Materialize,Reflection,20,22,1524.7272
+.NET 10.0 NativeAOT,Materialize,Reflection,20,23,1699.9012
+.NET 10.0 NativeAOT,Materialize,Reflection,20,24,1610.3805
+.NET 10.0 NativeAOT,Materialize,Reflection,20,25,1743.054
+.NET 10.0 NativeAOT,Materialize,Reflection,20,26,1474.3689
+.NET 10.0 NativeAOT,Materialize,Reflection,20,27,1513.4289
+.NET 10.0 NativeAOT,Materialize,Reflection,20,28,1212.8537
+.NET 10.0 NativeAOT,Materialize,Reflection,20,29,1760.1649
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,0,777.4447
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,1,769.7507
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,2,776.6144
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,3,778.7578
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,4,768.9099
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,5,765.8321
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,6,771.2466
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,7,772.7257
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,8,781.1754
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,9,765.2899
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,10,767.2595
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,11,769.9232
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,12,782.5503
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,13,777.5288
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,14,767.6162
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,15,771.8562
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,16,794.1261
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,17,771.7596
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,18,786.656
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,19,765.725
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,20,770.5486
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,21,768.4688
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,22,784.9712
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,23,782.3683
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,24,1274.9911
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,25,835.9114
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,26,913.9962
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,27,851.3826
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,28,773.327
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,20,29,798.4576
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,0,4079.3572
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,1,4298.7378
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,2,4645.7579
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,3,4710.8611
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,4,4208.4084
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,5,4250.8942
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,6,4214.4614
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,7,5110.9375
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,8,5071.6445
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,9,5458.1824
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,10,4371.3089
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,11,4719.5833
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,12,5930.5482
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,13,4419.9357
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,14,4335.8059
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,15,4282.8287
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,16,4492.6904
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,17,4150.6005
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,18,4205.3193
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,19,4099.3729
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,20,4104.0012
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,21,4264.2032
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,22,4115.901
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,23,4367.2948
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,24,5209.546
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,25,4077.7219
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,26,4020.9929
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,27,4061.5275
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,28,3994.5349
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,20,29,4026.9793
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,0,4916.1259
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,1,4634.7884
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,2,4607.6508
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,3,4521.3179
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,4,4489.6326
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,5,4587.2292
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,6,4472.999
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,7,4703.4736
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,8,4437.8623
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,9,4399.5951
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,10,4522.5587
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,11,4521.528
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,12,4482.7432
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,13,5671.0025
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,14,4393.8741
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,15,4438.0161
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,16,4339.0212
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,17,4391.645
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,18,4346.7111
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,19,4535.693
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,20,4339.6636
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,21,4357.9838
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,22,4460.9323
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,23,4346.2798
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,24,5476.81
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,25,6435.8315
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,26,5050.4655
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,27,5513.5755
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,28,4865.1326
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,20,29,5336.0614
+.NET 10.0 NativeAOT,Materialize,Generated,20,0,209.9002
+.NET 10.0 NativeAOT,Materialize,Generated,20,1,213.1931
+.NET 10.0 NativeAOT,Materialize,Generated,20,2,279.522
+.NET 10.0 NativeAOT,Materialize,Generated,20,3,295.0165
+.NET 10.0 NativeAOT,Materialize,Generated,20,4,230.9806
+.NET 10.0 NativeAOT,Materialize,Generated,20,5,217.338
+.NET 10.0 NativeAOT,Materialize,Generated,20,6,204.1059
+.NET 10.0 NativeAOT,Materialize,Generated,20,7,303.0609
+.NET 10.0 NativeAOT,Materialize,Generated,20,8,233.3829
+.NET 10.0 NativeAOT,Materialize,Generated,20,9,220.0094
+.NET 10.0 NativeAOT,Materialize,Generated,20,10,235.1627
+.NET 10.0 NativeAOT,Materialize,Generated,20,11,210.3933
+.NET 10.0 NativeAOT,Materialize,Generated,20,12,211.4687
+.NET 10.0 NativeAOT,Materialize,Generated,20,13,207.0703
+.NET 10.0 NativeAOT,Materialize,Generated,20,14,207.5676
+.NET 10.0 NativeAOT,Materialize,Generated,20,15,212.4672
+.NET 10.0 NativeAOT,Materialize,Generated,20,16,210.1829
+.NET 10.0 NativeAOT,Materialize,Generated,20,17,209.1791
+.NET 10.0 NativeAOT,Materialize,Generated,20,18,209.5262
+.NET 10.0 NativeAOT,Materialize,Generated,20,19,205.5547
+.NET 10.0 NativeAOT,Materialize,Generated,20,20,260.2762
+.NET 10.0 NativeAOT,Materialize,Generated,20,21,245.8669
+.NET 10.0 NativeAOT,Materialize,Generated,20,22,244.3566
+.NET 10.0 NativeAOT,Materialize,Generated,20,23,215.7361
+.NET 10.0 NativeAOT,Materialize,Generated,20,24,209.5354
+.NET 10.0 NativeAOT,Materialize,Generated,20,25,211.2435
+.NET 10.0 NativeAOT,Materialize,Generated,20,26,211.7921
+.NET 10.0 NativeAOT,Materialize,Generated,20,27,210.9468
+.NET 10.0 NativeAOT,Materialize,Generated,20,28,208.9726
+.NET 10.0 NativeAOT,Materialize,Generated,20,29,207.5967
+.NET 10.0 NativeAOT,Materialize,Reflection,50,0,4773.985
+.NET 10.0 NativeAOT,Materialize,Reflection,50,1,5097.3197
+.NET 10.0 NativeAOT,Materialize,Reflection,50,2,4997.0045
+.NET 10.0 NativeAOT,Materialize,Reflection,50,3,4889.064
+.NET 10.0 NativeAOT,Materialize,Reflection,50,4,4675.2705
+.NET 10.0 NativeAOT,Materialize,Reflection,50,5,2899.375
+.NET 10.0 NativeAOT,Materialize,Reflection,50,6,2934.5023
+.NET 10.0 NativeAOT,Materialize,Reflection,50,7,2816.1057
+.NET 10.0 NativeAOT,Materialize,Reflection,50,8,3131.71
+.NET 10.0 NativeAOT,Materialize,Reflection,50,9,2885.1462
+.NET 10.0 NativeAOT,Materialize,Reflection,50,10,2930.2157
+.NET 10.0 NativeAOT,Materialize,Reflection,50,11,2930.3864
+.NET 10.0 NativeAOT,Materialize,Reflection,50,12,2935.3316
+.NET 10.0 NativeAOT,Materialize,Reflection,50,13,2917.0549
+.NET 10.0 NativeAOT,Materialize,Reflection,50,14,3392.8542
+.NET 10.0 NativeAOT,Materialize,Reflection,50,15,4331.3233
+.NET 10.0 NativeAOT,Materialize,Reflection,50,16,4542.746
+.NET 10.0 NativeAOT,Materialize,Reflection,50,17,4037.611
+.NET 10.0 NativeAOT,Materialize,Reflection,50,18,2839.3201
+.NET 10.0 NativeAOT,Materialize,Reflection,50,19,2943.771
+.NET 10.0 NativeAOT,Materialize,Reflection,50,20,2932.422
+.NET 10.0 NativeAOT,Materialize,Reflection,50,21,3045.8771
+.NET 10.0 NativeAOT,Materialize,Reflection,50,22,2945.147
+.NET 10.0 NativeAOT,Materialize,Reflection,50,23,3339.4653
+.NET 10.0 NativeAOT,Materialize,Reflection,50,24,2930.8975
+.NET 10.0 NativeAOT,Materialize,Reflection,50,25,2826.3242
+.NET 10.0 NativeAOT,Materialize,Reflection,50,26,3012.0956
+.NET 10.0 NativeAOT,Materialize,Reflection,50,27,3056.0814
+.NET 10.0 NativeAOT,Materialize,Reflection,50,28,2841.4689
+.NET 10.0 NativeAOT,Materialize,Reflection,50,29,2990.6375
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,0,1875.2499
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,1,1926.555
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,2,1989.5059
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,3,1850.9193
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,4,1956.4934
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,5,1956.2461
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,6,1934.6179
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,7,1973.4063
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,8,1987.7862
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,9,1891.1777
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,10,1909.6794
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,11,1979.6175
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,12,1874.3564
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,13,2024.9988
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,14,1876.4553
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,15,1864.5721
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,16,1981.1948
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,17,1945.2273
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,18,1874.9525
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,19,1903.334
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,20,1898.2426
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,21,1902.5915
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,22,1916.0964
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,23,1910.4528
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,24,1909.2544
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,25,1889.536
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,26,1928.5678
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,27,1922.4514
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,28,1982.2837
+.NET 10.0 NativeAOT,Materialize,ReflectionInvoker,50,29,2043.1999
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,0,10942.3886
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,1,10668.1146
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,2,10569.3988
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,3,10868.8402
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,4,10118.9976
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,5,10131.711
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,6,10827.4417
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,7,12061.0563
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,8,11253.4252
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,9,10492.5563
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,10,10070.7992
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,11,10748.7953
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,12,10106.2291
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,13,10033.6587
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,14,10147.8799
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,15,10037.0083
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,16,10109.0378
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,17,10167.4248
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,18,10100.6445
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,19,10024.226
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,20,10105.3244
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,21,9982.389
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,22,10013.8146
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,23,9920.1921
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,24,9981.8811
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,25,10004.1819
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,26,9960.3248
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,27,9929.9252
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,28,9969.7067
+.NET 10.0 NativeAOT,Materialize,CompiledPerProperty,50,29,9941.3654
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,0,18594.8385
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,1,18583.253
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,2,17709.6376
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,3,17863.9269
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,4,14575.2875
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,5,12135.0495
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,6,12127.3584
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,7,12408.6748
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,8,11387.151
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,9,11241.4254
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,10,11094.319
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,11,11307.5978
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,12,11069.558
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,13,11511.5803
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,14,11047.0232
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,15,17903.6928
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,16,18295.5545
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,17,18227.0508
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,18,18363.3322
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,19,18429.3497
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,20,12566.6928
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,21,11228.7545
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,22,11082.0153
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,23,11212.6635
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,24,11117.3646
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,25,11038.4897
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,26,11076.8446
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,27,11193.0013
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,28,11262.4267
+.NET 10.0 NativeAOT,Materialize,CompiledWhole,50,29,11185.27
+.NET 10.0 NativeAOT,Materialize,Generated,50,0,596.9163
+.NET 10.0 NativeAOT,Materialize,Generated,50,1,591.6855
+.NET 10.0 NativeAOT,Materialize,Generated,50,2,581.0833
+.NET 10.0 NativeAOT,Materialize,Generated,50,3,583.622
+.NET 10.0 NativeAOT,Materialize,Generated,50,4,590.2038
+.NET 10.0 NativeAOT,Materialize,Generated,50,5,597.5631
+.NET 10.0 NativeAOT,Materialize,Generated,50,6,586.0555
+.NET 10.0 NativeAOT,Materialize,Generated,50,7,596.6226
+.NET 10.0 NativeAOT,Materialize,Generated,50,8,597.7476
+.NET 10.0 NativeAOT,Materialize,Generated,50,9,596.59
+.NET 10.0 NativeAOT,Materialize,Generated,50,10,588.5063
+.NET 10.0 NativeAOT,Materialize,Generated,50,11,598.1525
+.NET 10.0 NativeAOT,Materialize,Generated,50,12,597.0028
+.NET 10.0 NativeAOT,Materialize,Generated,50,13,601.1048
+.NET 10.0 NativeAOT,Materialize,Generated,50,14,587.3335
+.NET 10.0 NativeAOT,Materialize,Generated,50,15,599.0976
+.NET 10.0 NativeAOT,Materialize,Generated,50,16,603.84
+.NET 10.0 NativeAOT,Materialize,Generated,50,17,596.9825
+.NET 10.0 NativeAOT,Materialize,Generated,50,18,597.9604
+.NET 10.0 NativeAOT,Materialize,Generated,50,19,609.951
+.NET 10.0 NativeAOT,Materialize,Generated,50,20,602.0155
+.NET 10.0 NativeAOT,Materialize,Generated,50,21,595.6668
+.NET 10.0 NativeAOT,Materialize,Generated,50,22,597.185
+.NET 10.0 NativeAOT,Materialize,Generated,50,23,604.7001
+.NET 10.0 NativeAOT,Materialize,Generated,50,24,603.6695
+.NET 10.0 NativeAOT,Materialize,Generated,50,25,610.9148
+.NET 10.0 NativeAOT,Materialize,Generated,50,26,601.2689
+.NET 10.0 NativeAOT,Materialize,Generated,50,27,606.8798
+.NET 10.0 NativeAOT,Materialize,Generated,50,28,610.7102
+.NET 10.0 NativeAOT,Materialize,Generated,50,29,615.6939

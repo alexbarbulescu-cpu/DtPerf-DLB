@@ -4,3 +4,4 @@ bin-aot/
 build/*/bin/
 build/*/obj/
 results-*.zip
+out/

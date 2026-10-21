@@ -63,6 +63,10 @@ public static class Harness
             allocTotal += GC.GetAllocatedBytesForCurrentThread() - a0;
             samples[i] = (t1 - t0) * 1e9 / Stopwatch.Frequency / n;
         }
+        var log = Environment.GetEnvironmentVariable("DT_ITERLOG");
+        if (!string.IsNullOrEmpty(log))
+            File.AppendAllLines(log, samples.Select((x, i) => string.Join(",", Env.Runtime, category, method, p, i,
+                x.ToString("0.####", System.Globalization.CultureInfo.InvariantCulture))));
         Array.Sort(samples);
         double mean = samples.Average();
         double sd = Math.Sqrt(samples.Sum(x => (x - mean) * (x - mean)) / (samples.Length - 1));

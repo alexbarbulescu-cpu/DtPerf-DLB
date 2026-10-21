@@ -3,6 +3,14 @@ import sys, os, glob, json
 import pandas as pd, numpy as np
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.figure as _mf
+_orig_savefig = _mf.Figure.savefig
+def _savefig_also_pdf(self, fname, *a, **k):
+    _orig_savefig(self, fname, *a, **k)
+    if isinstance(fname, str) and fname.endswith(".png"):
+        k2 = {kk: vv for kk, vv in k.items() if kk != "dpi"}; _orig_savefig(self, fname[:-4] + ".pdf", *a, **k2)
+_mf.Figure.savefig = _savefig_also_pdf
+
 
 root, out = sys.argv[1], sys.argv[2]; os.makedirs(out, exist_ok=True)
 labels = sorted(d for d in os.listdir(root) if os.path.isdir(os.path.join(root, d)))
@@ -48,16 +56,41 @@ def sim_and_ref(label):
     s_ = s_[s_.BudgetMs < 1000]
     return s_, rf
 
-micro = pd.concat([x for x in (load(l, "micro_*.csv") for l in labels) if x is not None], ignore_index=True)
+def micro_rep_agg(label):
+    """Between-process aggregation of the repeated microbenchmark suite (v3): median of the per-process medians and a distribution-free
+    confidence interval for that median from order statistics (for 10 processes: 2nd and 9th value, coverage 97.9%)."""
+    fs = sorted(glob.glob(os.path.join(root, label, "v3", "micro_rep", "*_[0-9]*.csv")))
+    fs = [f for f in fs if not os.path.basename(f).startswith("iterlog")]
+    if len(fs) < 6: return None
+    from scipy.stats import binom
+    d = pd.concat([pd.read_csv(f).assign(proc=os.path.basename(f)) for f in fs], ignore_index=True)
+    rows = []
+    for (rt, cat, mth, p_), g in d.groupby(["Runtime", "Category", "Method", "P"], sort=False):
+        v = np.sort(g.MedianNs.values); n = len(v); j = 0
+        while j + 1 < n // 2 and 1 - 2 * binom.cdf(j + 1, n, 0.5) >= 0.95: j += 1   # [v_j, v_(n-1-j)] covers the median with prob 1 - 2 F(j)
+        rows.append({"Runtime": rt, "Category": cat, "Method": mth, "P": p_, "MedianNs": float(np.median(v)), "MeanNs": float(v.mean()),
+                     "SdNs": float(v.std(ddof=1)), "CiLoNs": float(v[j]), "CiHiNs": float(v[n - 1 - j]), "Ci95Ns": float((v[n - 1 - j] - v[j]) / 2),
+                     "CvPct": float(100 * v.std(ddof=1) / v.mean()), "NProc": n, "AllocBytesPerOp": float(g.AllocBytesPerOp.median())})
+    a = pd.DataFrame(rows); a["Platform"] = label; return a
+def load_micro(l):
+    a = micro_rep_agg(l)
+    if a is not None: return a
+    x = load(l, "micro_*.csv")
+    if x is not None:   # single process: t-interval of the mean over 30 iterations, widened to contain the median
+        x["CiLoNs"] = np.minimum(x.MedianNs, x.MeanNs - x.Ci95Ns); x["CiHiNs"] = np.maximum(x.MedianNs, x.MeanNs + x.Ci95Ns); x["NProc"] = 1
+    return x
+micro = pd.concat([x for x in (load_micro(l) for l in labels) if x is not None], ignore_index=True)
 cold = pd.concat([x for x in (load(l, "cold.csv") for l in labels) if x is not None], ignore_index=True)
 sim_labels = [l for l in labels if sim_and_ref(l)[0] is not None]
 summary = {"platforms": labels, "primary": primary}
 
 # ---------- Table: instantiation and setters (primary platform) ----------
-def fmt(m, ci): return f"{m:.1f} ± {ci:.1f}" if m < 100 else f"{m:.0f} ± {ci:.0f}"
+def fmt(m, lo, hi):
+    d = 1 if hi < 100 else 0
+    return f"{m:.{d}f} ({lo:.{d}f}–{hi:.{d}f})"
 mp = micro[micro.Platform == primary]
 for cat in ["Instantiate", "SetProperty"]:
-    t = mp[mp.Category == cat].copy(); t["v"] = [fmt(a, b) for a, b in zip(t.MedianNs, t.Ci95Ns)]
+    t = mp[mp.Category == cat].copy(); t["v"] = [fmt(a, b, c) for a, b, c in zip(t.MedianNs, t.CiLoNs, t.CiHiNs)]
     tab = t.pivot_table(index="Method", columns="Runtime", values="v", aggfunc="first", sort=False)[RTS]
     tab.to_csv(f"{out}/table_{cat.lower()}.csv")
 # ---------- Table: materialization ns/op and speed-up vs S1 ----------
@@ -67,7 +100,7 @@ for (rt, p), g in m.groupby(["Runtime", "P"]):
     base = g[g.Method == "Reflection"].MedianNs.iloc[0]
     for _, r in g.iterrows():
         rows.append({"Runtime": rt, "P": p, "Strategy": r.Method, "ns/op": r.MedianNs, "mean": r.MeanNs, "CI95": r.Ci95Ns,
-                     "x vs S1": base / r.MedianNs, "B/op": r.AllocBytesPerOp})
+                     "lo": r.CiLoNs, "hi": r.CiHiNs, "x vs S1": base / r.MedianNs, "B/op": r.AllocBytesPerOp})
 mat = pd.DataFrame(rows); mat.to_csv(f"{out}/table_materialize_long.csv", index=False)
 wide = mat.assign(cell=[f"{a:,.0f} ({x:.2f}×)" for a, x in zip(mat["ns/op"], mat["x vs S1"])]) \
     .pivot_table(index=["P", "Strategy"], columns="Runtime", values="cell", aggfunc="first")[RTS]
@@ -94,9 +127,9 @@ for ax, rt in zip(axs, RTS):
     g = mat[mat.Runtime == rt]
     for s in STRATS:
         h = g[g.Strategy == s].sort_values("P")
-        ax.errorbar(h.P, h["mean"], yerr=h.CI95, color=COL[s], marker=MRK[s], ls=LS[s], label=SLAB[s], capsize=2)
+        ax.errorbar(h.P, h["ns/op"], yerr=[h["ns/op"] - h.lo, h.hi - h["ns/op"]], color=COL[s], marker=MRK[s], ls=LS[s], label=SLAB[s], capsize=2)
     ax.set_yscale("log"); ax.set_xticks([5, 20, 50]); ax.set_title(rt, fontsize=9); ax.set_xlabel("Properties per snapshot (P)")
-axs[0].set_ylabel("ns per snapshot (mean, log)")
+axs[0].set_ylabel("ns per snapshot (median, log)")
 h, l = axs[0].get_legend_handles_labels(); fig.legend(h, l, loc="lower center", ncol=3, fontsize=7.5, bbox_to_anchor=(0.5, -0.08))
 fig.tight_layout(rect=(0, 0.12, 1, 1)); fig.savefig(f"{out}/fig2_materialization.png", bbox_inches="tight"); plt.close(fig)
 
@@ -116,7 +149,7 @@ pr = paired_regret(cons, ref); pr.to_csv(f"{out}/table_sim_seed.csv", index=Fals
 has = lambda c: c in pr.columns and pr[c].notna().any()
 aggspec = dict(cost=("CostPer1kAssetTicks", "mean"), cost_sd=("CostPer1kAssetTicks", "std"), fail=("FailuresPer1k", "mean"),
     pm=("PmPer1k", "mean"), ingest_ms=("IngestMs", "mean"), share=("IngestShare", "mean"), dropped=("DroppedShare", "mean"),
-    unsampled=("UnsampledCandShare", "mean"), samples=("SamplesPerCand", "mean"), n=("Seed", "count"),
+    unsampled=("UnsampledCandShare", "mean"), samples=("SamplesPerCand", "mean"), n=("Seed", "count"), Candidates=("Candidates", "mean"),
     regret_pct=("regret_seed", "mean"), regret_sd=("regret_seed", "std"), regret_min=("regret_seed", "min"), regret_max=("regret_seed", "max"),
     ref_cost=("ref_cost", "mean"))
 for c_ in ["Overrun5Share", "CycleP95Ms", "CycleP99Ms", "CycleMaxMs", "ScreenMs", "DecisionMs", "OverrunShare"]:
@@ -132,9 +165,9 @@ pd.DataFrame(pc).to_csv(f"{out}/table_collapse_seed.csv", index=False)
 # capacity and per-asset costs (sync, screening) from runs that were not budget-limited
 cap = []
 for (rt, st), g in agg.groupby(["Runtime", "Strategy"]):
-    ok = g[g.regret_pct <= 10].Assets; nb = g[g.share < 0.95]
+    ok = g[g.regret_pct <= 10].Assets; nb = g[(g.share < 0.95) & (g.dropped < 0.05)]   # per processed message
     cap.append({"Runtime": rt, "Strategy": st, "MaxFleetRegretLe10": int(ok.max()) if len(ok) else 0,
-                "PerAssetIngestUs": float((nb.ingest_ms / nb.Assets * 1000).median()) if len(nb) else np.nan,
+                "PerAssetIngestUs": float((nb.ingest_ms / (nb.Assets * (1 - nb.dropped)) * 1000).median()) if len(nb) else np.nan,
                 "PerAssetScreenUs": float((nb.ScreenMs / nb.Assets * 1000).median()) if (len(nb) and "ScreenMs" in nb) else np.nan,
                 "DecisionMs": float(nb.DecisionMs.median()) if (len(nb) and "DecisionMs" in nb) else np.nan})
 pd.DataFrame(cap).to_csv(f"{out}/table_capacity.csv", index=False)
@@ -148,18 +181,29 @@ if "CycleP99Ms" in agg:
         mx=("CycleMaxMs", "max"), ovr5=("Overrun5Share", "mean")).reset_index().to_csv(f"{out}/table_latency.csv", index=False)
 
 rts_present = [r for r in RTS if r in set(agg.Runtime)]
-fig, axs = plt.subplots(2, len(rts_present), figsize=(2.5 * len(rts_present) + 0.6, 4.6), sharex=True, sharey="row", squeeze=False)
-rr = refagg[refagg.Assets.isin(FLEETS)].sort_values("Assets")
+_rng = np.random.default_rng(20261020)
+def _boot_ci(v, n=2000):
+    v = np.asarray(v, float)
+    if len(v) < 2: return (v.mean(), v.mean())
+    m = _rng.choice(v, size=(n, len(v)), replace=True).mean(axis=1); return tuple(np.percentile(m, [2.5, 97.5]))
+bci = pr.groupby(["Runtime", "Strategy", "Assets"]).regret_seed.apply(lambda v: _boot_ci(v.values)).rename("ci").reset_index()
+agg = agg.merge(bci, on=["Runtime", "Strategy", "Assets"], how="left")
+agg["regret_lo"] = [c[0] for c in agg.ci]; agg["regret_hi"] = [c[1] for c in agg.ci]; agg = agg.drop(columns="ci")
+agg.to_csv(f"{out}/table_sim.csv", index=False)
+fig, axs = plt.subplots(2, len(rts_present), figsize=(2.5 * len(rts_present) + 0.6, 4.8), sharex=True, sharey="row", squeeze=False)
 for j, rt in enumerate(rts_present):
     g = agg[agg.Runtime == rt]
     for s in STRATS:
         h = g[g.Strategy == s].sort_values("Assets")
-        axs[0, j].errorbar(h.Assets / 1000, h.cost, yerr=h.cost_sd, color=COL[s], marker=MRK[s], ls=LS[s], label=SLAB[s], capsize=2)
-        axs[1, j].plot(h.Assets / 1000, 100 * h.share.clip(upper=1.0), color=COL[s], marker=MRK[s], ls=LS[s])
-    axs[0, j].plot(rr.Assets / 1000, rr.ref_cost, color="#52514e", lw=1, ls=(0, (4, 3)), label="Unconstrained twin (reference, same fleet)")
-    axs[0, j].set_title(rt, fontsize=9)
-    axs[1, j].set_xlabel("Fleet size (thousand assets)"); axs[1, j].set_ylim(0, 105)
-axs[0, 0].set_ylabel("Maintenance cost per\n1000 asset-cycles"); axs[1, 0].set_ylabel("Budget consumed by\ningest+materialize (%)")
+        axs[0, j].errorbar(h.Assets / 1000, h.regret_pct, yerr=[h.regret_pct - h.regret_lo, h.regret_hi - h.regret_pct], color=COL[s], marker=MRK[s],
+                           ls=LS[s], label=SLAB[s], capsize=2)
+        axs[1, j].plot(h.Assets / 1000, 100 * h.share, color=COL[s], marker=MRK[s], ls=LS[s])
+    axs[0, j].set_yscale("symlog", linthresh=10); axs[0, j].axhline(10, color="#52514e", lw=0.8, ls=(0, (4, 3)))
+    axs[0, j].axhline(100, color="#52514e", lw=0.8, ls=(0, (1, 2)))
+    axs[1, j].axhline(100, color="#52514e", lw=0.8, ls=(0, (4, 3)))
+    axs[0, j].set_title(rt, fontsize=9); axs[1, j].set_xlabel("Fleet size (thousand assets)")
+axs[0, 0].set_yticks([0, 10, 100, 500]); axs[0, 0].set_yticklabels(["0", "10", "100", "500"])
+axs[0, 0].set_ylabel("Regret vs. unconstrained\ntwin (%, symlog)"); axs[1, 0].set_ylabel("Synchronization time\n(% of budget B)")
 h, l = axs[0, 0].get_legend_handles_labels(); fig.legend(h, l, loc="lower center", ncol=3, fontsize=7.5, bbox_to_anchor=(0.5, -0.06))
 fig.tight_layout(rect=(0, 0.07, 1, 1)); fig.savefig(f"{out}/fig3_closed_loop.png", bbox_inches="tight"); plt.close(fig)
 
@@ -246,11 +290,12 @@ if sy is not None:
     sy["extra"] = sy.Strategy.str.replace("Synthetic", "").astype(int)
     sy = paired_regret(sy, ref)
     sga = sy.groupby(["BudgetMs", "extra", "Assets"]).agg(cost=("CostPer1kAssetTicks", "mean"), ingest=("IngestMs", "mean"), share=("IngestShare", "mean"),
+            dropped=("DroppedShare", "mean"),
             samples=("SamplesPerCand", "mean"), regret=("regret_seed", "mean"), scr=("ScreenMs", "mean"), dec=("DecisionMs", "mean")).reset_index()
     s10 = sga[sga.BudgetMs == 10]
     # per-message synchronization cost of each level and per-asset screening / decision time, estimated at B = 10 ms only
-    nb = s10[s10.share < 0.9]
-    cl = nb.assign(c=lambda d: d.ingest / d.Assets * 1000).groupby("extra").c.median()
+    nb = s10[(s10.share < 0.9) & (s10.dropped < 0.05)]
+    cl = nb.assign(c=lambda d: d.ingest / (d.Assets * (1 - d.dropped)) * 1000).groupby("extra").c.median()
     c_scr = float((nb.scr / nb.Assets * 1000).median()); t_dec = float(nb.dec.median())
     sga["c_us"] = sga.extra.map(cl); sga.to_csv(f"{out}/table_synthetic.csv", index=False)
     def astar_full(B, c): return (B - t_dec) * 1000 / (c + c_scr)
@@ -289,23 +334,25 @@ if sy is not None:
     for i, a in enumerate(fl):
         for j, e in enumerate(levels):
             if np.isfinite(Z[i, j]):
-                ax.text(cvals[j] * 1.13, a * 0.93, f"{Z[i, j]:.0f}", ha="left", va="top", fontsize=5.8, color="white" if band[i, j] == 2 else "#0b0b0b")
+                xl = np.exp(np.log(xe[j]) + 0.08 * (np.log(xe[j + 1]) - np.log(xe[j])))
+                ax.text(xl, a, f"{Z[i, j]:.0f}", ha="left", va="center", fontsize=5.6, color="white" if band[i, j] == 2 else "#0b0b0b")
     xs = np.geomspace(xe[0], xe[-1], 100)
     ax.plot(xs, astar_full(10, xs), color="#eb6834", lw=1.8)
     ax.plot(xs, astar_sync(10, xs), color="#eb6834", lw=1.0, ls=(0, (4, 3)))
     REALM = {".NET 8.0 JIT": "o", ".NET 10.0 JIT": "s", ".NET 10.0 NativeAOT": "^"}
-    for lab in sim_labels:
+    for lab in [primary]:
         cs_, rf_ = sim_and_ref(lab); x_ = paired_regret(cs_, rf_)
-        ra = x_.groupby(["Runtime", "Strategy", "Assets"]).agg(reg=("regret_seed", "mean"), ing=("IngestMs", "mean"), sh=("IngestShare", "mean")).reset_index()
+        ra = x_.groupby(["Runtime", "Strategy", "Assets"]).agg(reg=("regret_seed", "mean"), ing=("IngestMs", "mean"), sh=("IngestShare", "mean"),
+                                                               dr=("DroppedShare", "mean")).reset_index()
         for (rt, st), g_ in ra.groupby(["Runtime", "Strategy"]):
-            ok = g_[g_.sh < 0.9]
+            ok = g_[(g_.sh < 0.95) & (g_.dr < 0.05)]
             if not len(ok): continue
-            c_ = float((ok.ing / ok.Assets * 1000).median())
+            c_ = float((ok.ing / (ok.Assets * (1 - ok.dr)) * 1000).median())
             g_ = g_.sort_values("Assets"); bad = g_[g_.reg > 100]
             if not len(bad): continue
             hi = bad.Assets.iloc[0]; lo = g_[g_.Assets < hi].Assets.max() if (g_.Assets < hi).any() else hi / 2
             ax.errorbar(c_, np.sqrt(lo * hi), yerr=[[np.sqrt(lo * hi) - lo], [hi - np.sqrt(lo * hi)]], fmt=REALM.get(rt, "o"),
-                        color="#0b0b0b", mfc="white" if "cloud" in lab else "#0b0b0b", ms=5, lw=0.8, capsize=2, zorder=5)
+                        color="#0b0b0b", mfc="white", ms=5, lw=0.8, capsize=2, zorder=5)
     ax.set_xscale("log"); ax.set_yscale("log"); ax.set_xlim(xe[0], xe[-1]); ax.set_ylim(ye[0], ye[-1])
     from matplotlib.ticker import NullFormatter, FixedLocator, NullLocator
     ax.xaxis.set_major_locator(FixedLocator(cvals)); ax.xaxis.set_minor_locator(NullLocator())
@@ -315,9 +362,10 @@ if sy is not None:
     hs = [Patch(color="#d6e6f8", label="Regret ≤ 10%"), Patch(color="#7fb0ea", label="Regret 10–100% (degraded)"),
           Patch(color="#1f5ea8", label="Regret > 100% (collapsed)"),
           Line2D([], [], color="#eb6834", lw=1.8, label="Equation (4): $(B-T_{dec})/(c+c_s)$"),
-          Line2D([], [], color="#eb6834", lw=1.0, ls=(0, (4, 3)), label="Sync-only bound $B/c$"),
-          Line2D([], [], color="#0b0b0b", marker="s", ls="", mfc="white", label="Measured .NET strategy, cloud"),
-          Line2D([], [], color="#0b0b0b", marker="s", ls="", label="Measured .NET strategy, laptop")]
+          Line2D([], [], color="#eb6834", lw=1.0, ls=(0, (4, 3)), label="Sync-only bound $B/c$\n(nearly coincides with Eq. (4))"),
+          Line2D([], [], color="#0b0b0b", marker="s", ls="", mfc="white", label="Measured strategy, .NET 10 JIT"),
+          Line2D([], [], color="#0b0b0b", marker="o", ls="", mfc="white", label="Measured strategy, .NET 8 JIT"),
+          Line2D([], [], color="#0b0b0b", marker="^", ls="", mfc="white", label="Measured strategy, Native AOT")]
     ax.legend(handles=hs, fontsize=6.5, loc="upper left", bbox_to_anchor=(1.01, 1.0))
     fig.tight_layout(); fig.savefig(f"{out}/fig6_capacity_map.png", bbox_inches="tight"); plt.close(fig)
     summary.update({"syn_c_min": float(cvals.min()), "syn_c_max": float(cvals.max())})

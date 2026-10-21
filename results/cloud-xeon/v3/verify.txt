@@ -1,0 +1,3 @@
+net8,OK 3600 snapshot comparisons, all strategies identical
+net10,OK 3600 snapshot comparisons, all strategies identical
+aot,OK 3600 snapshot comparisons, all strategies identical

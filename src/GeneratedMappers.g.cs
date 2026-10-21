@@ -22,6 +22,17 @@ public static class GeneratedMappers
         return t;
     }
 
+    public static Telemetry5 MapLookup5(Dictionary<string, object?> d)
+    {
+        var t = new Telemetry5();
+        if (d.TryGetValue("AssetId", out var v_AssetId)) t.AssetId = (int)v_AssetId!;
+        if (d.TryGetValue("Tick", out var v_Tick)) t.Tick = (long)v_Tick!;
+        if (d.TryGetValue("Vibration", out var v_Vibration)) t.Vibration = (double)v_Vibration!;
+        if (d.TryGetValue("Temperature", out var v_Temperature)) t.Temperature = (double)v_Temperature!;
+        if (d.TryGetValue("Running", out var v_Running)) t.Running = (bool)v_Running!;
+        return t;
+    }
+
     public static Telemetry20 Map20(Dictionary<string, object?> d)
     {
         var t = new Telemetry20();
@@ -51,6 +62,32 @@ public static class GeneratedMappers
                 case "F19": t.F19 = (double)kv.Value!; break;
             }
         }
+        return t;
+    }
+
+    public static Telemetry20 MapLookup20(Dictionary<string, object?> d)
+    {
+        var t = new Telemetry20();
+        if (d.TryGetValue("AssetId", out var v_AssetId)) t.AssetId = (int)v_AssetId!;
+        if (d.TryGetValue("Tick", out var v_Tick)) t.Tick = (long)v_Tick!;
+        if (d.TryGetValue("Vibration", out var v_Vibration)) t.Vibration = (double)v_Vibration!;
+        if (d.TryGetValue("Temperature", out var v_Temperature)) t.Temperature = (double)v_Temperature!;
+        if (d.TryGetValue("Running", out var v_Running)) t.Running = (bool)v_Running!;
+        if (d.TryGetValue("F05", out var v_F05)) t.F05 = (double)v_F05!;
+        if (d.TryGetValue("F06", out var v_F06)) t.F06 = (int)v_F06!;
+        if (d.TryGetValue("F07", out var v_F07)) t.F07 = (double)v_F07!;
+        if (d.TryGetValue("F08", out var v_F08)) t.F08 = (long)v_F08!;
+        if (d.TryGetValue("F09", out var v_F09)) t.F09 = (bool)v_F09!;
+        if (d.TryGetValue("F10", out var v_F10)) t.F10 = (double)v_F10!;
+        if (d.TryGetValue("F11", out var v_F11)) t.F11 = (DateTime)v_F11!;
+        if (d.TryGetValue("F12", out var v_F12)) t.F12 = (double)v_F12!;
+        if (d.TryGetValue("F13", out var v_F13)) t.F13 = (int)v_F13!;
+        if (d.TryGetValue("F14", out var v_F14)) t.F14 = (double)v_F14!;
+        if (d.TryGetValue("F15", out var v_F15)) t.F15 = (long)v_F15!;
+        if (d.TryGetValue("F16", out var v_F16)) t.F16 = (bool)v_F16!;
+        if (d.TryGetValue("F17", out var v_F17)) t.F17 = (double)v_F17!;
+        if (d.TryGetValue("F18", out var v_F18)) t.F18 = (DateTime)v_F18!;
+        if (d.TryGetValue("F19", out var v_F19)) t.F19 = (double)v_F19!;
         return t;
     }
 
@@ -113,6 +150,62 @@ public static class GeneratedMappers
                 case "F49": t.F49 = (double)kv.Value!; break;
             }
         }
+        return t;
+    }
+
+    public static Telemetry50 MapLookup50(Dictionary<string, object?> d)
+    {
+        var t = new Telemetry50();
+        if (d.TryGetValue("AssetId", out var v_AssetId)) t.AssetId = (int)v_AssetId!;
+        if (d.TryGetValue("Tick", out var v_Tick)) t.Tick = (long)v_Tick!;
+        if (d.TryGetValue("Vibration", out var v_Vibration)) t.Vibration = (double)v_Vibration!;
+        if (d.TryGetValue("Temperature", out var v_Temperature)) t.Temperature = (double)v_Temperature!;
+        if (d.TryGetValue("Running", out var v_Running)) t.Running = (bool)v_Running!;
+        if (d.TryGetValue("F05", out var v_F05)) t.F05 = (double)v_F05!;
+        if (d.TryGetValue("F06", out var v_F06)) t.F06 = (int)v_F06!;
+        if (d.TryGetValue("F07", out var v_F07)) t.F07 = (double)v_F07!;
+        if (d.TryGetValue("F08", out var v_F08)) t.F08 = (long)v_F08!;
+        if (d.TryGetValue("F09", out var v_F09)) t.F09 = (bool)v_F09!;
+        if (d.TryGetValue("F10", out var v_F10)) t.F10 = (double)v_F10!;
+        if (d.TryGetValue("F11", out var v_F11)) t.F11 = (DateTime)v_F11!;
+        if (d.TryGetValue("F12", out var v_F12)) t.F12 = (double)v_F12!;
+        if (d.TryGetValue("F13", out var v_F13)) t.F13 = (int)v_F13!;
+        if (d.TryGetValue("F14", out var v_F14)) t.F14 = (double)v_F14!;
+        if (d.TryGetValue("F15", out var v_F15)) t.F15 = (long)v_F15!;
+        if (d.TryGetValue("F16", out var v_F16)) t.F16 = (bool)v_F16!;
+        if (d.TryGetValue("F17", out var v_F17)) t.F17 = (double)v_F17!;
+        if (d.TryGetValue("F18", out var v_F18)) t.F18 = (DateTime)v_F18!;
+        if (d.TryGetValue("F19", out var v_F19)) t.F19 = (double)v_F19!;
+        if (d.TryGetValue("F20", out var v_F20)) t.F20 = (int)v_F20!;
+        if (d.TryGetValue("F21", out var v_F21)) t.F21 = (double)v_F21!;
+        if (d.TryGetValue("F22", out var v_F22)) t.F22 = (long)v_F22!;
+        if (d.TryGetValue("F23", out var v_F23)) t.F23 = (bool)v_F23!;
+        if (d.TryGetValue("F24", out var v_F24)) t.F24 = (double)v_F24!;
+        if (d.TryGetValue("F25", out var v_F25)) t.F25 = (DateTime)v_F25!;
+        if (d.TryGetValue("F26", out var v_F26)) t.F26 = (double)v_F26!;
+        if (d.TryGetValue("F27", out var v_F27)) t.F27 = (int)v_F27!;
+        if (d.TryGetValue("F28", out var v_F28)) t.F28 = (double)v_F28!;
+        if (d.TryGetValue("F29", out var v_F29)) t.F29 = (long)v_F29!;
+        if (d.TryGetValue("F30", out var v_F30)) t.F30 = (bool)v_F30!;
+        if (d.TryGetValue("F31", out var v_F31)) t.F31 = (double)v_F31!;
+        if (d.TryGetValue("F32", out var v_F32)) t.F32 = (DateTime)v_F32!;
+        if (d.TryGetValue("F33", out var v_F33)) t.F33 = (double)v_F33!;
+        if (d.TryGetValue("F34", out var v_F34)) t.F34 = (int)v_F34!;
+        if (d.TryGetValue("F35", out var v_F35)) t.F35 = (double)v_F35!;
+        if (d.TryGetValue("F36", out var v_F36)) t.F36 = (long)v_F36!;
+        if (d.TryGetValue("F37", out var v_F37)) t.F37 = (bool)v_F37!;
+        if (d.TryGetValue("F38", out var v_F38)) t.F38 = (double)v_F38!;
+        if (d.TryGetValue("F39", out var v_F39)) t.F39 = (DateTime)v_F39!;
+        if (d.TryGetValue("F40", out var v_F40)) t.F40 = (double)v_F40!;
+        if (d.TryGetValue("F41", out var v_F41)) t.F41 = (int)v_F41!;
+        if (d.TryGetValue("F42", out var v_F42)) t.F42 = (double)v_F42!;
+        if (d.TryGetValue("F43", out var v_F43)) t.F43 = (long)v_F43!;
+        if (d.TryGetValue("F44", out var v_F44)) t.F44 = (bool)v_F44!;
+        if (d.TryGetValue("F45", out var v_F45)) t.F45 = (double)v_F45!;
+        if (d.TryGetValue("F46", out var v_F46)) t.F46 = (DateTime)v_F46!;
+        if (d.TryGetValue("F47", out var v_F47)) t.F47 = (double)v_F47!;
+        if (d.TryGetValue("F48", out var v_F48)) t.F48 = (int)v_F48!;
+        if (d.TryGetValue("F49", out var v_F49)) t.F49 = (double)v_F49!;
         return t;
     }
 

@@ -25,6 +25,58 @@ public static class MicroBenches
 
     public static List<BenchResult> Materialization20() => Materialization<Telemetry20>(20).ToList();
 
+    // control suite: S4 vs S5 vs S5b on a hot payload (P = 5/20/50) and all strategies on 65,536 distinct payloads (cold caches)
+    public static List<BenchResult> Control()
+    {
+        var res = new List<BenchResult>();
+        res.AddRange(Ctl<Telemetry5>(5)); res.AddRange(Ctl<Telemetry20>(20)); res.AddRange(Ctl<Telemetry50>(50));
+        var rng = new Random(11); const int N = 1 << 16;
+        var payloads = new Dictionary<string, object?>[N];
+        for (int i = 0; i < N; i++) payloads[i] = Payloads.Create<Telemetry20>(rng, i, i);
+        foreach (var name in MaterializerNames.All.Append(MaterializerNames.GeneratedLookup))
+        {
+            var m = MaterializerFactory.Create<Telemetry20>(name); int k = 0;
+            res.Add(Harness.Run("MaterializeCold", name, 20, n => { object? s = null; for (int i = 0; i < n; i++) s = m.Map(payloads[(k++) & (N - 1)]); Harness.Sink = s; }));
+        }
+        return res;
+    }
+    static IEnumerable<BenchResult> Ctl<T>(int p) where T : class, new()
+    {
+        var payload = Payloads.Create<T>(new Random(7));
+        foreach (var name in MaterializerNames.Control)
+        {
+            var m = MaterializerFactory.Create<T>(name);
+            yield return Harness.Run("MaterializeCtl", name, p, n => { object? s = null; for (int i = 0; i < n; i++) s = m.Map(payload); Harness.Sink = s; });
+        }
+    }
+
+    // every strategy must produce the same snapshot for the same payload
+    public static string Verify()
+    {
+        int checks = 0;
+        string Check<T>(int seeds) where T : class, new()
+        {
+            var names = MaterializerNames.All.Append(MaterializerNames.GeneratedLookup).ToArray();
+            var ms = names.Select(n => MaterializerFactory.Create<T>(n)).ToArray();
+            var props = typeof(T).GetProperties();
+            for (int s = 0; s < seeds; s++)
+            {
+                var pl = Payloads.Create<T>(new Random(s), s, s);
+                var refObj = ms[names.Length - 2].Map(pl);   // S5
+                foreach (var m in ms)
+                {
+                    var o = m.Map(pl);
+                    foreach (var pr in props)
+                        if (!Equals(pr.GetValue(o), pr.GetValue(refObj))) return $"MISMATCH {typeof(T).Name} {m.Name} {pr.Name}";
+                    checks++;
+                }
+            }
+            return "";
+        }
+        var r = Check<Telemetry5>(200) + Check<Telemetry20>(200) + Check<Telemetry50>(200);
+        return r == "" ? $"OK {checks} snapshot comparisons, all strategies identical" : r;
+    }
+
     // ---------------- RQ1: instantiation ----------------
     static IEnumerable<BenchResult> Instantiation()
     {

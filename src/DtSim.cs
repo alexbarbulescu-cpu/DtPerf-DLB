@@ -96,6 +96,10 @@ public sealed class DtSim
     public string Run()
     {
         int A = _c.Assets, H = _c.Horizon;
+        int burnin = int.TryParse(Environment.GetEnvironmentVariable("DT_BURNIN"), out var bi) && bi >= 0 ? bi : _c.Burnin;
+        // decision policy: "base" (paper), "fb2" (conservative fallback TTF <= 2H), "jeffreys" (sample-size-aware posterior mean)
+        string policy = Environment.GetEnvironmentVariable("DT_POLICY") ?? "base";
+        bool gcFence = Environment.GetEnvironmentVariable("DT_GCFENCE") == "1";
         int capacity = Math.Max(1, A / 100);
         double theta = double.TryParse(Environment.GetEnvironmentVariable("DT_THETA"), System.Globalization.NumberStyles.Float, CultureInfo.InvariantCulture, out var th) ? th : _c.Theta;
         long budgetTicks = (long)(_c.BudgetMs * Stopwatch.Frequency / 1000.0);
@@ -116,6 +120,7 @@ public sealed class DtSim
         {
             EmitTelemetry(tick);
             _s = (ulong)(_c.Seed * 1_000_003L + tick) | 1UL; // identical MC stream for every strategy
+            if (gcFence) { GC.Collect(); GC.WaitForPendingFinalizers(); }   // control: collect out-of-budget garbage before the window
             int gc0 = GC.CollectionCount(0);
             sw.Restart();
             long syncDeadline = budgetTicks - (long)(1.25 * (scrEst + decEst));
@@ -161,10 +166,16 @@ public sealed class DtSim
             // ---- decision: risk-ranked, capacity-limited preventive maintenance ----
             // work orders execute after a lead time of H cycles; p_hat = P(failure before the order executes).
             // assets with MC evidence use p_hat >= theta; assets without evidence fall back to the point forecast TTF <= H
+            Func<int, double> riskOf = policy switch
+            {
+                "fb2" => i => samples[i] > 0 ? (double)hitsArr[i] / samples[i] : (ttf[i] <= 2 * H ? 1.0 : 0.0),
+                "jeffreys" => i => (hitsArr[i] + 0.5) / (samples[i] + 1.0),
+                _ => i => samples[i] > 0 ? (double)hitsArr[i] / samples[i] : (ttf[i] <= H ? 1.0 : 0.0),
+            };
             var chosen = cand
-                .Select(i => (i, risk: samples[i] > 0 ? (double)hitsArr[i] / samples[i] : (ttf[i] <= H ? 1.0 : 0.0)))
+                .Select(i => (i, risk: riskOf(i)))
                 .Where(x => x.risk >= theta).OrderByDescending(x => x.risk).Take(capacity).Select(x => x.i).ToList();
-            bool count = tick > _c.Burnin;
+            bool count = tick > burnin;
             foreach (var i in chosen) scheduled[i] = tick + H;
             // decisions are issued here: the cycle latency is measured up to this point
             long tEnd = sw.ElapsedTicks, tDec = tEnd - tDec0;
@@ -206,6 +217,19 @@ public sealed class DtSim
             F(sumIngestMs / measured), F(sumIngestMs / measured / _c.BudgetMs), F(sumDropped / measured / A),
             F(sumCand / measured), F(sumUnscreenedCand / Math.Max(1, sumCand)), F(sumSamplesPerCand / measured), F((double)overrunTicks / measured), F((double)overrun5 / measured),
             F(Q(0.95)), F(Q(0.99)), F(Q(1.0)), F(sumScrMs / measured), F(sumDecMs / measured));
+    }
+
+    /// <summary>Cost of one simulated degradation path (c_mc) in the current runtime, in ns per path.</summary>
+    public static double McBench(int paths)
+    {
+        var sim = new DtSim(new Config("Generated", 16, 1000, 1, 1));
+        sim._s = 0x9E3779B97F4A7C15UL; int sink = 0;
+        for (int w = 0; w < paths / 10; w += 16) sink += sim.SimulateHits(0.7, 0.006, 10, 16);   // warm-up
+        var sw = Stopwatch.StartNew();
+        for (int k = 0; k < paths; k += 16) sink += sim.SimulateHits(0.7, 0.006, 10, 16);
+        sw.Stop();
+        if (sink == int.MinValue) Console.Error.WriteLine(sink);
+        return sw.Elapsed.TotalMilliseconds * 1e6 / paths;
     }
 
     public static string Header => "Runtime,Strategy,Assets,BudgetMs,Seed,Ticks,CostPer1kAssetTicks,FailuresPer1k,PmPer1k,IngestMs,IngestShare,DroppedShare,Candidates,UnsampledCandShare,SamplesPerCand,OverrunShare,Overrun5Share,CycleP95Ms,CycleP99Ms,CycleMaxMs,ScreenMs,DecisionMs";

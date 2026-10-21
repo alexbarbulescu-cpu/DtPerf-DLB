@@ -1,0 +1,870 @@
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,0,9.9189
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,1,9.1084
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,2,9.0799
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,3,11.0183
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,4,10.7186
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,5,10.726
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,6,9.0362
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,7,9.4382
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,8,10.7674
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,9,8.7237
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,10,8.7461
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,11,8.7736
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,12,8.8591
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,13,8.7425
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,14,8.7651
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,15,8.8488
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,16,8.7514
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,17,9.4982
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,18,8.7285
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,19,8.7619
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,20,8.8289
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,21,8.8154
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,22,9.0366
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,23,8.6903
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,24,8.8888
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,25,8.6708
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,26,8.7295
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,27,8.9234
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,28,8.9016
+.NET 8.0 JIT,Instantiate,Direct (new T()),5,29,8.9154
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,0,9.1636
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,1,8.9831
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,2,8.6778
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,3,8.6384
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,4,8.5373
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,5,8.79
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,6,8.635
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,7,8.6535
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,8,9.0047
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,9,8.5462
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,10,8.7288
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,11,8.6979
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,12,8.6375
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,13,8.5227
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,14,8.4393
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,15,8.5724
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,16,8.4611
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,17,8.4841
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,18,8.4704
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,19,8.7965
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,20,8.9925
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,21,8.6496
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,22,8.598
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,23,8.6526
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,24,8.5631
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,25,8.9927
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,26,8.6233
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,27,8.5654
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,28,8.6771
+.NET 8.0 JIT,Instantiate,UnsafeAccessor,5,29,8.9877
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,0,15.3745
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,1,17.1435
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,2,17.1001
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,3,16.3705
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,4,13.1576
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,5,12.9651
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,6,12.8264
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,7,12.9672
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,8,12.9438
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,9,16.4938
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,10,15.4979
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,11,13.6709
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,12,13.7138
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,13,13.1957
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,14,13.1716
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,15,13.3034
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,16,13.4931
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,17,13.6572
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,18,13.7163
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,19,14.0008
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,20,13.7044
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,21,13.2943
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,22,14.1914
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,23,12.9829
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,24,17.0927
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,25,16.921
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,26,17.1841
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,27,16.8011
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,28,12.7745
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance<T>,5,29,12.7795
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,0,18.5031
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,1,18.5151
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,2,18.7029
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,3,19.329
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,4,17.9876
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,5,13.7398
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,6,13.6398
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,7,19.3351
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,8,19.3714
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,9,22.5315
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,10,19.7285
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,11,14.0698
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,12,13.729
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,13,13.8619
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,14,13.7154
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,15,13.8295
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,16,13.9337
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,17,13.8789
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,18,13.8759
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,19,13.7487
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,20,13.6885
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,21,13.74
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,22,14.6257
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,23,14.3467
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,24,13.9292
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,25,14.1343
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,26,14.225
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,27,18.2867
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,28,15.7844
+.NET 8.0 JIT,Instantiate,Activator.CreateInstance(Type),5,29,15.6391
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,0,21.8326
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,1,21.1816
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,2,21.7112
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,3,21.8855
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,4,21.9833
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,5,19.905
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,6,16.335
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,7,20.1337
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,8,16.694
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,9,23.0221
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,10,21.139
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,11,17.9078
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,12,22.7493
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,13,16.2042
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,14,16.2709
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,15,16.2587
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,16,16.2396
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,17,16.8582
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,18,16.2742
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,19,15.9875
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,20,16.172
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,21,16.4043
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,22,16.6293
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,23,16.4705
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,24,16.9549
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,25,16.5
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,26,16.7059
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,27,16.5249
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,28,16.5882
+.NET 8.0 JIT,Instantiate,ConstructorInfo.Invoke,5,29,16.6316
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,0,17.8677
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,1,17.8237
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,2,17.4989
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,3,17.5445
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,4,15.6959
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,5,13.0376
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,6,13.0874
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,7,13.339
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,8,15.572
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,9,15.5594
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,10,14.8183
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,11,15.923
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,12,15.0309
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,13,15.0049
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,14,15.5727
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,15,17.461
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,16,16.6775
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,17,14.173
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,18,13.1433
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,19,13.9313
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,20,13.1691
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,21,13.4355
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,22,13.7288
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,23,13.3376
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,24,13.455
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,25,13.4372
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,26,13.5473
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,27,13.4204
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,28,14.0361
+.NET 8.0 JIT,Instantiate,ConstructorInvoker,5,29,16.2399
+.NET 8.0 JIT,Instantiate,Compiled expression,5,0,13.6988
+.NET 8.0 JIT,Instantiate,Compiled expression,5,1,15.642
+.NET 8.0 JIT,Instantiate,Compiled expression,5,2,15.5699
+.NET 8.0 JIT,Instantiate,Compiled expression,5,3,15.4606
+.NET 8.0 JIT,Instantiate,Compiled expression,5,4,13.9931
+.NET 8.0 JIT,Instantiate,Compiled expression,5,5,12.1523
+.NET 8.0 JIT,Instantiate,Compiled expression,5,6,9.9617
+.NET 8.0 JIT,Instantiate,Compiled expression,5,7,10.0696
+.NET 8.0 JIT,Instantiate,Compiled expression,5,8,9.9167
+.NET 8.0 JIT,Instantiate,Compiled expression,5,9,9.9855
+.NET 8.0 JIT,Instantiate,Compiled expression,5,10,10.2695
+.NET 8.0 JIT,Instantiate,Compiled expression,5,11,9.9096
+.NET 8.0 JIT,Instantiate,Compiled expression,5,12,10.0319
+.NET 8.0 JIT,Instantiate,Compiled expression,5,13,9.9697
+.NET 8.0 JIT,Instantiate,Compiled expression,5,14,9.9012
+.NET 8.0 JIT,Instantiate,Compiled expression,5,15,9.919
+.NET 8.0 JIT,Instantiate,Compiled expression,5,16,9.8662
+.NET 8.0 JIT,Instantiate,Compiled expression,5,17,9.6329
+.NET 8.0 JIT,Instantiate,Compiled expression,5,18,9.6042
+.NET 8.0 JIT,Instantiate,Compiled expression,5,19,9.8037
+.NET 8.0 JIT,Instantiate,Compiled expression,5,20,9.9334
+.NET 8.0 JIT,Instantiate,Compiled expression,5,21,9.8985
+.NET 8.0 JIT,Instantiate,Compiled expression,5,22,10.0186
+.NET 8.0 JIT,Instantiate,Compiled expression,5,23,9.7954
+.NET 8.0 JIT,Instantiate,Compiled expression,5,24,10.0165
+.NET 8.0 JIT,Instantiate,Compiled expression,5,25,10.0687
+.NET 8.0 JIT,Instantiate,Compiled expression,5,26,11.6246
+.NET 8.0 JIT,Instantiate,Compiled expression,5,27,12.4425
+.NET 8.0 JIT,Instantiate,Compiled expression,5,28,11.9716
+.NET 8.0 JIT,Instantiate,Compiled expression,5,29,12.0242
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,0,0.3642
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,1,0.3661
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,2,0.3572
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,3,0.3701
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,4,0.3583
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,5,0.3645
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,6,0.379
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,7,0.3958
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,8,0.3712
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,9,0.3731
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,10,0.4301
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,11,0.6587
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,12,0.6242
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,13,0.6111
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,14,0.603
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,15,0.6114
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,16,0.6214
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,17,0.5755
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,18,0.3716
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,19,0.3637
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,20,0.3746
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,21,0.361
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,22,0.3748
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,23,0.3714
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,24,0.3888
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,25,0.5298
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,26,0.4053
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,27,0.3633
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,28,0.3715
+.NET 8.0 JIT,SetProperty,Direct (t.P = v),5,29,0.3911
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,0,0.3578
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,1,0.3651
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,2,0.3634
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,3,0.3586
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,4,0.3617
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,5,0.3996
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,6,0.3694
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,7,0.3832
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,8,0.3716
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,9,0.3606
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,10,0.387
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,11,0.3844
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,12,0.4149
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,13,0.3622
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,14,0.3965
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,15,0.3917
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,16,0.3995
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,17,0.3666
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,18,0.3631
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,19,0.3787
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,20,0.4815
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,21,0.6132
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,22,0.627
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,23,0.6371
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,24,0.6458
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,25,0.5505
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,26,0.3674
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,27,0.3919
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,28,0.3941
+.NET 8.0 JIT,SetProperty,UnsafeAccessor,5,29,0.3586
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,0,26.6841
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,1,23.2104
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,2,22.5765
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,3,22.2457
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,4,22.5797
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,5,22.5824
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,6,22.636
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,7,22.4385
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,8,23.8263
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,9,22.9912
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,10,22.5596
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,11,23.3369
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,12,24.3111
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,13,24.5035
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,14,23.1212
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,15,24.4665
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,16,24.0819
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,17,23.0702
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,18,26.274
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,19,23.5226
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,20,24.0006
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,21,23.4375
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,22,23.6292
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,23,22.5771
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,24,23.001
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,25,22.8442
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,26,24.1617
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,27,24.3
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,28,23.2038
+.NET 8.0 JIT,SetProperty,PropertyInfo.SetValue,5,29,23.5074
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,0,10.0826
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,1,10.2096
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,2,9.9622
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,3,10.1009
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,4,10.149
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,5,10.4155
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,6,10.4827
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,7,10.2756
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,8,10.5419
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,9,9.9548
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,10,10.2129
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,11,9.8541
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,12,10.503
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,13,16.7033
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,14,16.3433
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,15,10.5553
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,16,9.9026
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,17,9.9231
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,18,10.082
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,19,10.7894
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,20,18.7993
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,21,18.6316
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,22,16.9564
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,23,10.1056
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,24,10.2064
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,25,10.2513
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,26,10.5572
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,27,10.0783
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,28,9.8808
+.NET 8.0 JIT,SetProperty,MethodInvoker,5,29,10.3832
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,0,2.8913
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,1,2.9736
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,2,2.8733
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,3,2.8863
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,4,2.9047
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,5,2.8919
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,6,2.8478
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,7,2.866
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,8,2.8465
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,9,3.0133
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,10,2.9009
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,11,2.9517
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,12,2.9579
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,13,2.9103
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,14,2.9584
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,15,3.3695
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,16,3.3142
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,17,3.1352
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,18,2.8534
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,19,2.8611
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,20,2.8409
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,21,2.8708
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,22,2.959
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,23,2.8537
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,24,2.9226
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,25,3.7113
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,26,3.1779
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,27,2.9719
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,28,3.0943
+.NET 8.0 JIT,SetProperty,CreateDelegate (typed),5,29,2.8533
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,0,1.6313
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,1,1.6504
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,2,1.9231
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,3,1.4975
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,4,1.4359
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,5,1.4123
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,6,1.4943
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,7,1.477
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,8,1.4146
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,9,1.4247
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,10,1.4809
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,11,1.4625
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,12,1.6233
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,13,1.4142
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,14,1.4282
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,15,1.4827
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,16,1.5228
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,17,1.4966
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,18,1.4927
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,19,1.4624
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,20,1.4343
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,21,1.4165
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,22,1.4691
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,23,1.5827
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,24,1.5196
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,25,1.4882
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,26,1.4529
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,27,2.2889
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,28,2.4276
+.NET 8.0 JIT,SetProperty,Compiled expression (typed),5,29,2.5369
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,0,2.335
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,1,2.37
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,2,2.3312
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,3,2.3904
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,4,2.3006
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,5,2.3868
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,6,2.3917
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,7,2.4041
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,8,2.3928
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,9,2.4174
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,10,2.4638
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,11,2.3426
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,12,2.3506
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,13,2.8904
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,14,2.349
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,15,2.3004
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,16,2.7024
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,17,2.2985
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,18,2.2568
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,19,2.2917
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,20,2.2651
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,21,2.4593
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,22,3.1374
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,23,3.1134
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,24,2.379
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,25,2.3847
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,26,2.2894
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,27,2.3063
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,28,2.4914
+.NET 8.0 JIT,SetProperty,Compiled expression (object),5,29,2.4293
+.NET 8.0 JIT,Materialize,Reflection,5,0,200.3711
+.NET 8.0 JIT,Materialize,Reflection,5,1,200.2838
+.NET 8.0 JIT,Materialize,Reflection,5,2,206.4672
+.NET 8.0 JIT,Materialize,Reflection,5,3,189.4134
+.NET 8.0 JIT,Materialize,Reflection,5,4,221.2686
+.NET 8.0 JIT,Materialize,Reflection,5,5,262.8867
+.NET 8.0 JIT,Materialize,Reflection,5,6,192.275
+.NET 8.0 JIT,Materialize,Reflection,5,7,197.1054
+.NET 8.0 JIT,Materialize,Reflection,5,8,196.3385
+.NET 8.0 JIT,Materialize,Reflection,5,9,189.8198
+.NET 8.0 JIT,Materialize,Reflection,5,10,202.049
+.NET 8.0 JIT,Materialize,Reflection,5,11,195.2998
+.NET 8.0 JIT,Materialize,Reflection,5,12,188.7603
+.NET 8.0 JIT,Materialize,Reflection,5,13,195.0322
+.NET 8.0 JIT,Materialize,Reflection,5,14,186.0127
+.NET 8.0 JIT,Materialize,Reflection,5,15,184.903
+.NET 8.0 JIT,Materialize,Reflection,5,16,254.7335
+.NET 8.0 JIT,Materialize,Reflection,5,17,182.2804
+.NET 8.0 JIT,Materialize,Reflection,5,18,187.0086
+.NET 8.0 JIT,Materialize,Reflection,5,19,183.1821
+.NET 8.0 JIT,Materialize,Reflection,5,20,187.9252
+.NET 8.0 JIT,Materialize,Reflection,5,21,184.847
+.NET 8.0 JIT,Materialize,Reflection,5,22,188.2284
+.NET 8.0 JIT,Materialize,Reflection,5,23,186.8077
+.NET 8.0 JIT,Materialize,Reflection,5,24,187.5992
+.NET 8.0 JIT,Materialize,Reflection,5,25,190.0725
+.NET 8.0 JIT,Materialize,Reflection,5,26,186.3173
+.NET 8.0 JIT,Materialize,Reflection,5,27,184.271
+.NET 8.0 JIT,Materialize,Reflection,5,28,182.8465
+.NET 8.0 JIT,Materialize,Reflection,5,29,186.4723
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,0,118.4572
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,1,119.5265
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,2,119.1506
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,3,119.3987
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,4,119.6928
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,5,119.4592
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,6,118.6042
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,7,119.5425
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,8,118.548
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,9,119.5131
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,10,118.4386
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,11,118.0887
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,12,119.3066
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,13,118.7034
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,14,119.4965
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,15,119.032
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,16,119.1184
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,17,121.0432
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,18,119.0428
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,19,119.0123
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,20,119.2772
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,21,119.3494
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,22,124.4072
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,23,121.0546
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,24,118.4385
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,25,119.0536
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,26,123.3145
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,27,127.5884
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,28,122.0556
+.NET 8.0 JIT,Materialize,ReflectionInvoker,5,29,120.9728
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,0,97.8468
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,1,82.5776
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,2,84.9908
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,3,84.4333
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,4,84.169
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,5,82.2845
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,6,84.0997
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,7,85.2783
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,8,93.787
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,9,118.3355
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,10,129.5536
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,11,133.6576
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,12,133.0124
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,13,135.8477
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,14,136.4785
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,15,113.2139
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,16,81.2201
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,17,82.7212
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,18,81.5114
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,19,81.596
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,20,81.033
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,21,96.9184
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,22,84.2696
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,23,85.7121
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,24,84.3617
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,25,117.7203
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,26,86.8054
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,27,83.0335
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,28,84.3117
+.NET 8.0 JIT,Materialize,CompiledPerProperty,5,29,82.6054
+.NET 8.0 JIT,Materialize,CompiledWhole,5,0,95.6938
+.NET 8.0 JIT,Materialize,CompiledWhole,5,1,93.2705
+.NET 8.0 JIT,Materialize,CompiledWhole,5,2,91.9825
+.NET 8.0 JIT,Materialize,CompiledWhole,5,3,110.2833
+.NET 8.0 JIT,Materialize,CompiledWhole,5,4,103.0505
+.NET 8.0 JIT,Materialize,CompiledWhole,5,5,98.1853
+.NET 8.0 JIT,Materialize,CompiledWhole,5,6,99.1036
+.NET 8.0 JIT,Materialize,CompiledWhole,5,7,93.3705
+.NET 8.0 JIT,Materialize,CompiledWhole,5,8,97.5371
+.NET 8.0 JIT,Materialize,CompiledWhole,5,9,95.4824
+.NET 8.0 JIT,Materialize,CompiledWhole,5,10,97.4234
+.NET 8.0 JIT,Materialize,CompiledWhole,5,11,98.4654
+.NET 8.0 JIT,Materialize,CompiledWhole,5,12,101.5072
+.NET 8.0 JIT,Materialize,CompiledWhole,5,13,99.0327
+.NET 8.0 JIT,Materialize,CompiledWhole,5,14,97.88
+.NET 8.0 JIT,Materialize,CompiledWhole,5,15,99.3754
+.NET 8.0 JIT,Materialize,CompiledWhole,5,16,97.3405
+.NET 8.0 JIT,Materialize,CompiledWhole,5,17,109.8708
+.NET 8.0 JIT,Materialize,CompiledWhole,5,18,92.3957
+.NET 8.0 JIT,Materialize,CompiledWhole,5,19,93.2416
+.NET 8.0 JIT,Materialize,CompiledWhole,5,20,93.2649
+.NET 8.0 JIT,Materialize,CompiledWhole,5,21,93.804
+.NET 8.0 JIT,Materialize,CompiledWhole,5,22,92.8864
+.NET 8.0 JIT,Materialize,CompiledWhole,5,23,92.3844
+.NET 8.0 JIT,Materialize,CompiledWhole,5,24,98.0976
+.NET 8.0 JIT,Materialize,CompiledWhole,5,25,94.7124
+.NET 8.0 JIT,Materialize,CompiledWhole,5,26,97.007
+.NET 8.0 JIT,Materialize,CompiledWhole,5,27,94.5204
+.NET 8.0 JIT,Materialize,CompiledWhole,5,28,93.3322
+.NET 8.0 JIT,Materialize,CompiledWhole,5,29,94.3286
+.NET 8.0 JIT,Materialize,Generated,5,0,31.7312
+.NET 8.0 JIT,Materialize,Generated,5,1,31.5393
+.NET 8.0 JIT,Materialize,Generated,5,2,31.9934
+.NET 8.0 JIT,Materialize,Generated,5,3,32.109
+.NET 8.0 JIT,Materialize,Generated,5,4,31.2104
+.NET 8.0 JIT,Materialize,Generated,5,5,31.4244
+.NET 8.0 JIT,Materialize,Generated,5,6,38.2468
+.NET 8.0 JIT,Materialize,Generated,5,7,45.3713
+.NET 8.0 JIT,Materialize,Generated,5,8,45.9949
+.NET 8.0 JIT,Materialize,Generated,5,9,38.8573
+.NET 8.0 JIT,Materialize,Generated,5,10,31.9071
+.NET 8.0 JIT,Materialize,Generated,5,11,31.2384
+.NET 8.0 JIT,Materialize,Generated,5,12,31.4184
+.NET 8.0 JIT,Materialize,Generated,5,13,31.5167
+.NET 8.0 JIT,Materialize,Generated,5,14,31.2702
+.NET 8.0 JIT,Materialize,Generated,5,15,31.8115
+.NET 8.0 JIT,Materialize,Generated,5,16,31.3853
+.NET 8.0 JIT,Materialize,Generated,5,17,31.2635
+.NET 8.0 JIT,Materialize,Generated,5,18,31.5918
+.NET 8.0 JIT,Materialize,Generated,5,19,31.6133
+.NET 8.0 JIT,Materialize,Generated,5,20,42.3361
+.NET 8.0 JIT,Materialize,Generated,5,21,43.5047
+.NET 8.0 JIT,Materialize,Generated,5,22,32.6276
+.NET 8.0 JIT,Materialize,Generated,5,23,31.2591
+.NET 8.0 JIT,Materialize,Generated,5,24,32.843
+.NET 8.0 JIT,Materialize,Generated,5,25,31.7881
+.NET 8.0 JIT,Materialize,Generated,5,26,31.0615
+.NET 8.0 JIT,Materialize,Generated,5,27,33.6194
+.NET 8.0 JIT,Materialize,Generated,5,28,43.3125
+.NET 8.0 JIT,Materialize,Generated,5,29,40.0729
+.NET 8.0 JIT,Materialize,Reflection,20,0,706.7492
+.NET 8.0 JIT,Materialize,Reflection,20,1,709.7372
+.NET 8.0 JIT,Materialize,Reflection,20,2,713.5652
+.NET 8.0 JIT,Materialize,Reflection,20,3,735.341
+.NET 8.0 JIT,Materialize,Reflection,20,4,744.4564
+.NET 8.0 JIT,Materialize,Reflection,20,5,713.8772
+.NET 8.0 JIT,Materialize,Reflection,20,6,685.7738
+.NET 8.0 JIT,Materialize,Reflection,20,7,720.3704
+.NET 8.0 JIT,Materialize,Reflection,20,8,737.631
+.NET 8.0 JIT,Materialize,Reflection,20,9,735.4007
+.NET 8.0 JIT,Materialize,Reflection,20,10,724.8388
+.NET 8.0 JIT,Materialize,Reflection,20,11,811.8755
+.NET 8.0 JIT,Materialize,Reflection,20,12,726.629
+.NET 8.0 JIT,Materialize,Reflection,20,13,735.0665
+.NET 8.0 JIT,Materialize,Reflection,20,14,723.1521
+.NET 8.0 JIT,Materialize,Reflection,20,15,722.6569
+.NET 8.0 JIT,Materialize,Reflection,20,16,713.8152
+.NET 8.0 JIT,Materialize,Reflection,20,17,769.8944
+.NET 8.0 JIT,Materialize,Reflection,20,18,725.714
+.NET 8.0 JIT,Materialize,Reflection,20,19,1249.1469
+.NET 8.0 JIT,Materialize,Reflection,20,20,694.8997
+.NET 8.0 JIT,Materialize,Reflection,20,21,710.1506
+.NET 8.0 JIT,Materialize,Reflection,20,22,770.5178
+.NET 8.0 JIT,Materialize,Reflection,20,23,697.6326
+.NET 8.0 JIT,Materialize,Reflection,20,24,704.3815
+.NET 8.0 JIT,Materialize,Reflection,20,25,745.1038
+.NET 8.0 JIT,Materialize,Reflection,20,26,1009.6494
+.NET 8.0 JIT,Materialize,Reflection,20,27,776.3067
+.NET 8.0 JIT,Materialize,Reflection,20,28,810.9255
+.NET 8.0 JIT,Materialize,Reflection,20,29,749.5733
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,0,451.1063
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,1,434.8783
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,2,436.8439
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,3,443.5931
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,4,462.0789
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,5,442.0102
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,6,446.0738
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,7,569.3463
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,8,498.8443
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,9,459.3222
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,10,651.3538
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,11,785.9359
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,12,741.3585
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,13,490.2189
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,14,449.33
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,15,556.5453
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,16,501.2091
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,17,479.2274
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,18,479.1927
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,19,444.6011
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,20,448.7875
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,21,439.0759
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,22,606.3005
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,23,425.208
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,24,433.0233
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,25,594.338
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,26,521.6953
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,27,585.2341
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,28,515.1218
+.NET 8.0 JIT,Materialize,ReflectionInvoker,20,29,434.1334
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,0,293.9515
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,1,287.4213
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,2,313.7887
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,3,307.0497
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,4,286.5705
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,5,293.9724
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,6,286.3715
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,7,294.4856
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,8,290.3682
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,9,294.4331
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,10,289.0189
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,11,285.9244
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,12,290.4984
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,13,284.0236
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,14,286.379
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,15,286.8266
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,16,298.4807
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,17,290.9899
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,18,289.4374
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,19,287.2245
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,20,287.6058
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,21,297.92
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,22,306.3602
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,23,293.4715
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,24,300.9202
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,25,289.1694
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,26,297.444
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,27,297.9417
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,28,350.0964
+.NET 8.0 JIT,Materialize,CompiledPerProperty,20,29,300.4387
+.NET 8.0 JIT,Materialize,CompiledWhole,20,0,415.8279
+.NET 8.0 JIT,Materialize,CompiledWhole,20,1,410.1921
+.NET 8.0 JIT,Materialize,CompiledWhole,20,2,413.1374
+.NET 8.0 JIT,Materialize,CompiledWhole,20,3,409.2156
+.NET 8.0 JIT,Materialize,CompiledWhole,20,4,408.7304
+.NET 8.0 JIT,Materialize,CompiledWhole,20,5,399.9915
+.NET 8.0 JIT,Materialize,CompiledWhole,20,6,273.5648
+.NET 8.0 JIT,Materialize,CompiledWhole,20,7,274.8652
+.NET 8.0 JIT,Materialize,CompiledWhole,20,8,273.3359
+.NET 8.0 JIT,Materialize,CompiledWhole,20,9,274.7036
+.NET 8.0 JIT,Materialize,CompiledWhole,20,10,274.5228
+.NET 8.0 JIT,Materialize,CompiledWhole,20,11,279.1838
+.NET 8.0 JIT,Materialize,CompiledWhole,20,12,274.3233
+.NET 8.0 JIT,Materialize,CompiledWhole,20,13,281.1775
+.NET 8.0 JIT,Materialize,CompiledWhole,20,14,271.0899
+.NET 8.0 JIT,Materialize,CompiledWhole,20,15,274.3162
+.NET 8.0 JIT,Materialize,CompiledWhole,20,16,275.2551
+.NET 8.0 JIT,Materialize,CompiledWhole,20,17,274.1627
+.NET 8.0 JIT,Materialize,CompiledWhole,20,18,272.3691
+.NET 8.0 JIT,Materialize,CompiledWhole,20,19,273.1309
+.NET 8.0 JIT,Materialize,CompiledWhole,20,20,272.0118
+.NET 8.0 JIT,Materialize,CompiledWhole,20,21,274.9652
+.NET 8.0 JIT,Materialize,CompiledWhole,20,22,273.1607
+.NET 8.0 JIT,Materialize,CompiledWhole,20,23,272.7638
+.NET 8.0 JIT,Materialize,CompiledWhole,20,24,271.5585
+.NET 8.0 JIT,Materialize,CompiledWhole,20,25,271.7001
+.NET 8.0 JIT,Materialize,CompiledWhole,20,26,272.2981
+.NET 8.0 JIT,Materialize,CompiledWhole,20,27,274.5936
+.NET 8.0 JIT,Materialize,CompiledWhole,20,28,275.4168
+.NET 8.0 JIT,Materialize,CompiledWhole,20,29,273.8769
+.NET 8.0 JIT,Materialize,Generated,20,0,107.0552
+.NET 8.0 JIT,Materialize,Generated,20,1,106.2615
+.NET 8.0 JIT,Materialize,Generated,20,2,105.3476
+.NET 8.0 JIT,Materialize,Generated,20,3,106.0713
+.NET 8.0 JIT,Materialize,Generated,20,4,106.9113
+.NET 8.0 JIT,Materialize,Generated,20,5,107.0888
+.NET 8.0 JIT,Materialize,Generated,20,6,106.7194
+.NET 8.0 JIT,Materialize,Generated,20,7,105.2647
+.NET 8.0 JIT,Materialize,Generated,20,8,106.2467
+.NET 8.0 JIT,Materialize,Generated,20,9,105.8219
+.NET 8.0 JIT,Materialize,Generated,20,10,106.7697
+.NET 8.0 JIT,Materialize,Generated,20,11,107.5196
+.NET 8.0 JIT,Materialize,Generated,20,12,106.4877
+.NET 8.0 JIT,Materialize,Generated,20,13,107.9531
+.NET 8.0 JIT,Materialize,Generated,20,14,145.9222
+.NET 8.0 JIT,Materialize,Generated,20,15,148.558
+.NET 8.0 JIT,Materialize,Generated,20,16,151.5334
+.NET 8.0 JIT,Materialize,Generated,20,17,150.9425
+.NET 8.0 JIT,Materialize,Generated,20,18,142.7224
+.NET 8.0 JIT,Materialize,Generated,20,19,134.8573
+.NET 8.0 JIT,Materialize,Generated,20,20,107.1614
+.NET 8.0 JIT,Materialize,Generated,20,21,107.5691
+.NET 8.0 JIT,Materialize,Generated,20,22,106.6828
+.NET 8.0 JIT,Materialize,Generated,20,23,107.6983
+.NET 8.0 JIT,Materialize,Generated,20,24,107.4488
+.NET 8.0 JIT,Materialize,Generated,20,25,106.5196
+.NET 8.0 JIT,Materialize,Generated,20,26,107.7077
+.NET 8.0 JIT,Materialize,Generated,20,27,106.5378
+.NET 8.0 JIT,Materialize,Generated,20,28,120.7254
+.NET 8.0 JIT,Materialize,Generated,20,29,110.6827
+.NET 8.0 JIT,Materialize,Reflection,50,0,1733.8979
+.NET 8.0 JIT,Materialize,Reflection,50,1,1715.5969
+.NET 8.0 JIT,Materialize,Reflection,50,2,1747.791
+.NET 8.0 JIT,Materialize,Reflection,50,3,1761.6426
+.NET 8.0 JIT,Materialize,Reflection,50,4,1744.6765
+.NET 8.0 JIT,Materialize,Reflection,50,5,1766.1412
+.NET 8.0 JIT,Materialize,Reflection,50,6,1801.594
+.NET 8.0 JIT,Materialize,Reflection,50,7,1785.3015
+.NET 8.0 JIT,Materialize,Reflection,50,8,1745.6645
+.NET 8.0 JIT,Materialize,Reflection,50,9,1758.6336
+.NET 8.0 JIT,Materialize,Reflection,50,10,1760.4412
+.NET 8.0 JIT,Materialize,Reflection,50,11,1747.7378
+.NET 8.0 JIT,Materialize,Reflection,50,12,1809.1296
+.NET 8.0 JIT,Materialize,Reflection,50,13,1919.4606
+.NET 8.0 JIT,Materialize,Reflection,50,14,1767.8334
+.NET 8.0 JIT,Materialize,Reflection,50,15,1753.9511
+.NET 8.0 JIT,Materialize,Reflection,50,16,1753.1675
+.NET 8.0 JIT,Materialize,Reflection,50,17,1737.0168
+.NET 8.0 JIT,Materialize,Reflection,50,18,1740.2996
+.NET 8.0 JIT,Materialize,Reflection,50,19,1743.5367
+.NET 8.0 JIT,Materialize,Reflection,50,20,1737.7137
+.NET 8.0 JIT,Materialize,Reflection,50,21,1761.6767
+.NET 8.0 JIT,Materialize,Reflection,50,22,1726.7257
+.NET 8.0 JIT,Materialize,Reflection,50,23,1744.9469
+.NET 8.0 JIT,Materialize,Reflection,50,24,2050.6485
+.NET 8.0 JIT,Materialize,Reflection,50,25,1744.0606
+.NET 8.0 JIT,Materialize,Reflection,50,26,1724.5635
+.NET 8.0 JIT,Materialize,Reflection,50,27,1740.5148
+.NET 8.0 JIT,Materialize,Reflection,50,28,1726.8352
+.NET 8.0 JIT,Materialize,Reflection,50,29,1750.8285
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,0,1052.2062
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,1,1079.6495
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,2,1048.0413
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,3,1838.2793
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,4,1172.3795
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,5,1095.6738
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,6,1074.9705
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,7,1069.453
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,8,1171.8328
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,9,1429.7199
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,10,1093.4676
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,11,1072.5866
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,12,1080.4422
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,13,1056.7317
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,14,1182.209
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,15,1211.2767
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,16,1089.0059
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,17,1130.8597
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,18,1053.702
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,19,1086.1141
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,20,1093.1733
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,21,1078.1428
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,22,1107.3388
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,23,1076.7233
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,24,1078.8835
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,25,1152.0113
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,26,1167.4447
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,27,1168.0987
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,28,1127.7441
+.NET 8.0 JIT,Materialize,ReflectionInvoker,50,29,1160.4591
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,0,677.3673
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,1,648.7129
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,2,651.0208
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,3,647.4968
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,4,651.2396
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,5,666.2111
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,6,664.0628
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,7,671.548
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,8,689.2428
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,9,684.9176
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,10,715.2434
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,11,650.7704
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,12,875.0655
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,13,661.8417
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,14,673.0663
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,15,686.666
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,16,677.716
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,17,680.4317
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,18,689.5237
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,19,675.6947
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,20,660.7672
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,21,656.3835
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,22,680.0955
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,23,667.0021
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,24,681.9428
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,25,675.1945
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,26,740.281
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,27,1057.0824
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,28,1005.8292
+.NET 8.0 JIT,Materialize,CompiledPerProperty,50,29,674.0055
+.NET 8.0 JIT,Materialize,CompiledWhole,50,0,696.71
+.NET 8.0 JIT,Materialize,CompiledWhole,50,1,731.8332
+.NET 8.0 JIT,Materialize,CompiledWhole,50,2,667.8476
+.NET 8.0 JIT,Materialize,CompiledWhole,50,3,662.401
+.NET 8.0 JIT,Materialize,CompiledWhole,50,4,670.7611
+.NET 8.0 JIT,Materialize,CompiledWhole,50,5,659.9658
+.NET 8.0 JIT,Materialize,CompiledWhole,50,6,668.7796
+.NET 8.0 JIT,Materialize,CompiledWhole,50,7,684.749
+.NET 8.0 JIT,Materialize,CompiledWhole,50,8,683.9413
+.NET 8.0 JIT,Materialize,CompiledWhole,50,9,681.826
+.NET 8.0 JIT,Materialize,CompiledWhole,50,10,697.5713
+.NET 8.0 JIT,Materialize,CompiledWhole,50,11,712.1533
+.NET 8.0 JIT,Materialize,CompiledWhole,50,12,669.803
+.NET 8.0 JIT,Materialize,CompiledWhole,50,13,674.1745
+.NET 8.0 JIT,Materialize,CompiledWhole,50,14,674.4605
+.NET 8.0 JIT,Materialize,CompiledWhole,50,15,682.611
+.NET 8.0 JIT,Materialize,CompiledWhole,50,16,661.6523
+.NET 8.0 JIT,Materialize,CompiledWhole,50,17,828.4661
+.NET 8.0 JIT,Materialize,CompiledWhole,50,18,675.9774
+.NET 8.0 JIT,Materialize,CompiledWhole,50,19,676.1512
+.NET 8.0 JIT,Materialize,CompiledWhole,50,20,662.8431
+.NET 8.0 JIT,Materialize,CompiledWhole,50,21,661.8163
+.NET 8.0 JIT,Materialize,CompiledWhole,50,22,659.2698
+.NET 8.0 JIT,Materialize,CompiledWhole,50,23,661.7992
+.NET 8.0 JIT,Materialize,CompiledWhole,50,24,658.8887
+.NET 8.0 JIT,Materialize,CompiledWhole,50,25,669.6844
+.NET 8.0 JIT,Materialize,CompiledWhole,50,26,661.8634
+.NET 8.0 JIT,Materialize,CompiledWhole,50,27,689.3741
+.NET 8.0 JIT,Materialize,CompiledWhole,50,28,669.2067
+.NET 8.0 JIT,Materialize,CompiledWhole,50,29,678.3211
+.NET 8.0 JIT,Materialize,Generated,50,0,385.428
+.NET 8.0 JIT,Materialize,Generated,50,1,371.1412
+.NET 8.0 JIT,Materialize,Generated,50,2,364.9957
+.NET 8.0 JIT,Materialize,Generated,50,3,369.5027
+.NET 8.0 JIT,Materialize,Generated,50,4,373.3697
+.NET 8.0 JIT,Materialize,Generated,50,5,372.4749
+.NET 8.0 JIT,Materialize,Generated,50,6,404.6754
+.NET 8.0 JIT,Materialize,Generated,50,7,379.1832
+.NET 8.0 JIT,Materialize,Generated,50,8,441.0647
+.NET 8.0 JIT,Materialize,Generated,50,9,402.6204
+.NET 8.0 JIT,Materialize,Generated,50,10,375.754
+.NET 8.0 JIT,Materialize,Generated,50,11,472.8479
+.NET 8.0 JIT,Materialize,Generated,50,12,385.5834
+.NET 8.0 JIT,Materialize,Generated,50,13,474.4958
+.NET 8.0 JIT,Materialize,Generated,50,14,388.7374
+.NET 8.0 JIT,Materialize,Generated,50,15,375.8218
+.NET 8.0 JIT,Materialize,Generated,50,16,376.5492
+.NET 8.0 JIT,Materialize,Generated,50,17,375.1297
+.NET 8.0 JIT,Materialize,Generated,50,18,375.0172
+.NET 8.0 JIT,Materialize,Generated,50,19,383.1713
+.NET 8.0 JIT,Materialize,Generated,50,20,367.3505
+.NET 8.0 JIT,Materialize,Generated,50,21,370.7628
+.NET 8.0 JIT,Materialize,Generated,50,22,370.169
+.NET 8.0 JIT,Materialize,Generated,50,23,371.8343
+.NET 8.0 JIT,Materialize,Generated,50,24,403.5708
+.NET 8.0 JIT,Materialize,Generated,50,25,369.2347
+.NET 8.0 JIT,Materialize,Generated,50,26,401.226
+.NET 8.0 JIT,Materialize,Generated,50,27,366.3451
+.NET 8.0 JIT,Materialize,Generated,50,28,367.3191
+.NET 8.0 JIT,Materialize,Generated,50,29,367.2322

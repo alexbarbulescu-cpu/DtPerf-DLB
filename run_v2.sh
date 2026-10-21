@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # v2 protocol (Linux, primary platform): full-cycle budget (sync+screen+what-if+decision), per-fleet references, 5 seeds, held-out budgets, depth ablation.
-OUT=${OUT:-results/cloud-xeon-v2}; mkdir -p $OUT
+OUT=${OUT:-results/cloud-xeon}; mkdir -p $OUT
 J="build/jit/bin/Release"; declare -A RT=( [net8]="$J/net8.0/DtPerf.dll" [net10]="$J/net10.0/DtPerf.dll" [aot]="./bin-aot/DtPerf" )
 run() { local r=$1; shift; if [ "$r" = aot ]; then ${RT[aot]} "$@"; else dotnet ${RT[$r]} "$@"; fi; }
 SEEDS=${SEEDS:-5}; FLEETS="2500 5000 7500 10000 15000 20000 30000"
