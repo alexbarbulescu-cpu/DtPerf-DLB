@@ -89,6 +89,7 @@ def fmt(m, lo, hi):
     d = 1 if hi < 100 else 0
     return f"{m:.{d}f} ({lo:.{d}f}–{hi:.{d}f})"
 mp = micro[micro.Platform == primary]
+mp.to_csv(f"{out}/micro_primary.csv", index=False)   # the values used in the text (between-process medians when repeated runs exist)
 for cat in ["Instantiate", "SetProperty"]:
     t = mp[mp.Category == cat].copy(); t["v"] = [fmt(a, b, c) for a, b, c in zip(t.MedianNs, t.CiLoNs, t.CiHiNs)]
     tab = t.pivot_table(index="Method", columns="Runtime", values="v", aggfunc="first", sort=False)[RTS]

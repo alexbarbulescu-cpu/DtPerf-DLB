@@ -4,7 +4,7 @@
 
 | Manuscript | Raw data (results/…) | Produced by | Output |
 |---|---|---|---|
-| Table 2 (instantiation, set property) | `cloud-xeon/v3/micro_rep/{net8,net10,aot}_{1..10}.csv` | analyze.py | `table_instantiate.csv`, `table_setproperty.csv` |
+| Table 2 and Section 4.1 (instantiation, set property) | `cloud-xeon/v3/micro_rep/{net8,net10,aot}_{1..10}.csv` | analyze.py | `table_instantiate.csv`, `table_setproperty.csv`, `micro_primary.csv` (values quoted in the text) |
 | Table 3, Figure 2 (materialization) | same | analyze.py | `table_materialize.csv`, `table_materialize_long.csv`, `fig2_materialization.{png,pdf}` |
 | Section 4.2 (between-process variation, steady state) | `cloud-xeon/v3/micro_rep/*.csv`, `iterlog_*.csv`; first single-process run `cloud-xeon/micro_*.csv` | analyze_v3.py | `summary_v3.json` (`rep_*`, `ss_*`, `orig_*`) |
 | Table 4 (S4/S5b/S5 control, cold payloads) | `cloud-xeon/v3/microctl/*.csv`, `cloud-xeon/v3/sim_s5b.csv` | analyze_v3.py | `table_control_long.csv`, `summary_v3.json` (`ctrl`, `s5b_loop`) |
